@@ -19,17 +19,21 @@
     </div>
     <!--Name input box-->
     <div id="name-box" class="container">
-        <label for="name">Please tell us your name</label>
-        <input type="text" id="name">
-        <button class="control-btn">Next</button>
+        <form action="#">
+            <label for="name">Please tell us your name</label>
+            <input type="text" id="name" maxlength="15">
+            <button type="submit" id="intro-next" class="control-btn">Next</button>
+        </form>
     </div>
     <!--Age input box-->
     <div id="age-box" class="container hidden">
-        <label for="age">Please tell us your age</label>
-        <input type="text" id="age">
-        <button class="control-btn">Start quiz</button>
+        <form action="#">
+            <label for="age">Please tell us your age</label>
+            <input type="text" id="age" pattern="[0=9]" required>
+            <button type="submit" class="control-btn">Start quiz</button>
+        </form>
     </div>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/intro.js"></script>
 </body>
 
 </html>
