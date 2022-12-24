@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link href="assets/css/styles.css" rel="stylesheet">
     <title>PopPersonality</title>
 </head>
+
 <body>
     <div id="title-box" class="container">
         <a href="index.html" alt="Go to home/start page">
@@ -16,26 +18,43 @@
         </a>
     </div>
     <div id="description-box" class="container">
-            <p>Welcome to our personality quiz. Unlike a standard psychological quiz, PopPersonality gives you a chance to get to know yourself better in a fun way
-                by matching with one of the well-known characters from popular series or movies. Click Rules button below for details on how to play.
+        <p>Welcome to our personality quiz. Unlike a standard psychological quiz, PopPersonality gives you a chance to
+            get to know yourself better in a fun way
+            by matching with one of the well-known characters from popular series or movies.
+        </p>
+        <p>Click Rules button below for details on how to play.</p>
+    </div>
+    <!-- Button opening rules modal-->
+    <div class="container">
+        <button id="open-modal">Rules</button>
+    </div>
+    <!-- Modal Container -->
+    <div id="rules-modal" class="container hidden">
+        <div id="rules-content">
+            <span class="close-modal">&times;</span>
+            <h2>Rules</h2>
+            <p>Press Go to Quiz to start</p>
+            <p>When prompted enter your name and age to allow us personalize your experience</p>
+            <p>Select one of the three answers to the questions- Yes, No, Sometimes, that you think describes you best
             </p>
+            <p>For most accurate results try going with your first instinct instead of analyzing too much which answer
+                to select</p>
+        </div>
     </div>
-    <div id="rules-box" class="container">
-        <p>Rules, rules, rules</p>
-    </div>
-    <div id="start-box" class="container">
+    <div id="start-box" class="container hidden">
         <button class="control-btn">Go to quiz</button>
     </div>
-    <div id="name-box" class="hidden container">
+    <div id="name-box" class="container">
         <label for="name">Please tell us your name</label>
         <input type="text" id="name">
         <button class="control-btn">Next</button>
     </div>
-    <div id="age-box" class="hidden container">
+    <div id="age-box" class="container">
         <label for="age">Please tell us your age</label>
         <input type="text" id="age">
         <button class="control-btn">Start quiz</button>
     </div>
-   <script src="assets/js/script.js"></script> 
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
