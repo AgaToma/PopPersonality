@@ -9,9 +9,10 @@ introNextButton.addEventListener("click", showAgeBox);
 startQuizButton.addEventListener("click", validateAgeInput);
 
 //Submits name input, hides input and shows age box
-function showAgeBox () {
+function showAgeBox (event) {
 
     if (userName.value === "") {
+        event.preventDefault();
         alert("Please enter your name");
     } else {
     nameBox.style.display = "none";
@@ -26,10 +27,11 @@ function showAgeBox () {
 
 //validates age input presence and if number format
 
-function validateAgeInput () {
+function validateAgeInput (event) {
 
     if (userAge.value !== NaN) {
-        alert("Please enter your age");
+        event.preventDefault();
+        alert("Please enter your age in a number format");
     } else {
         console.log("Age entered")
     }
