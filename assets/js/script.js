@@ -1,8 +1,9 @@
 let rulesModal = document.getElementById("rules-modal");
 let rulesOpenButton = document.getElementById("open-modal");
 let rulesClose = document.getElementsByClassName("close-modal")[0];
-let quizStartButton = document.getElementById("start-btn");
 let nameBox = document.getElementById("name-box");
+
+//next steps: save user input value of name and make next show age box
 
 rulesOpenButton.addEventListener("click", openRulesModal);
 rulesClose.addEventListener("click", closeRulesModal);
@@ -19,7 +20,3 @@ function closeRulesModal () {
     rulesModal.style.display = "none"
 }
 
-//Opens name input form
-function openNameBox () {
-    nameBox.style.display = "block";
-}
