@@ -13,5 +13,11 @@ function showAgeBox () {
     } else {
     nameBox.style.display = "none";
     ageBox.style.display = "block";
+
+    document.getElementById("age-label").innerHTML = `
+    <label id="age-label" for="age">${userName.value}, you are nearly set. Please enter you age, so we can assign you to the correct group
+    </label>
+    `
     }
 }
+
