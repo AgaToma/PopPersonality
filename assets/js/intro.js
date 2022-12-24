@@ -2,7 +2,7 @@ let nameBox = document.getElementById("name-box");
 let introNextButton = document.getElementById("intro-next");
 let userName = document.getElementById("name");
 let ageBox = document.getElementById("age-box");
-let userAge = document.getElementById("age");
+let userAge = document.getElementById("age-input");
 let startQuizButton = document.getElementById("start-quiz");
 
 introNextButton.addEventListener("click", showAgeBox);
@@ -25,11 +25,12 @@ function showAgeBox (event) {
     }
 }
 
+
 //validates age input presence and if number format
 
 function validateAgeInput (event) {
 
-    if (userAge.value !== NaN) {
+    if (isNaN(userAge.value) || userAge.value === "") {
         event.preventDefault();
         alert("Please enter your age in a number format");
     } else {
