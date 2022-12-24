@@ -12,3 +12,14 @@ body {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 4%;
+    background-color: rgb(160, 157, 157);
+}
