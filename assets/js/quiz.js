@@ -53,6 +53,7 @@ function validateAgeInput (event) {
 let question = document.getElementById("question");
 //answers array - to be added
 
+let questionCard = document.getElementById("question-card");
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
@@ -61,7 +62,7 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 //all questions
-let questions = [
+let questionsKids = [
     {question: "Is your room clean and in order?"},
     {question: "Is your homework always done on time?"},
     {question: "Do you like cooking?"},
@@ -70,7 +71,53 @@ let questions = [
 ];
 
 
-//distributes user to correct age group and starts quiz
+let questionsAdults = [
+    {question: "Is your house clean and in order?"},
+    {question: "Are you satisfied with your career?"},
+    {question: "Do you like cooking?"},
+    {question: "Do you often help others when they are stuck?"},
+    {question: "Do you like when it snows?"},
+];
+
+
+//scores from each answer type
+const answerYes = 10;
+const answerSometimes = 5;
+const answerNo = 1;
+
+//maximum amount of questions a user will get
+const maxQuestionCount = 10;
+
+//quiz event listeners
+
+startQuizButton.addEventListener("click", startQuiz);
+
+/**
+ * Starts quiz selecting random questions from kids or adults questions array
+ */
+
+function startQuiz () {
+    score = 0;
+    questionCounter = 0;
+    ageBox.style.display = "none"
+    questionCard.style.display = "block";
+
+    if (userAge.value < 18) {
+    availableQuestions = [...questionsKids];
+    } else {
+        availableQuestions = [...questionsAdults];
+    }
+
+    getNextQuestion();
+}
+
+function getNextQuestion () {
+    questionCounter++;
+    let questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerText = currentQuestion.question;
+
+}
 
 
 
