@@ -5,6 +5,7 @@ let userName = document.getElementById("name");
 let ageBox = document.getElementById("age-box");
 let userAge = document.getElementById("age-input");
 let startQuizButton = document.getElementById("start-quiz");
+let resultsCard = document.getElementById("results-card");
 
 //quiz intro event listeners
 introNextButton.addEventListener("click", showAgeBox);
@@ -14,18 +15,18 @@ startQuizButton.addEventListener("click", validateAgeInput);
 
 /** 
  * Submits name input, hides input and shows age box
-*/
+ */
 
-function showAgeBox (event) {
+function showAgeBox(event) {
 
     if (userName.value === "") {
         event.preventDefault();
         alert("Please enter your name");
     } else {
-    nameBox.style.display = "none";
-    ageBox.style.display = "block";
+        nameBox.style.display = "none";
+        ageBox.style.display = "block";
 
-    document.getElementById("age-label").innerHTML = `
+        document.getElementById("age-label").innerHTML = `
     <label id="age-label" for="age">${userName.value}, you are nearly set. Please enter you age, so we can assign you to the correct group
     </label>
     `
@@ -34,10 +35,10 @@ function showAgeBox (event) {
 
 /** 
  * validates age input presence and if number format
-*/
+ */
 
 
-function validateAgeInput (event) {
+function validateAgeInput(event) {
 
     if (isNaN(userAge.value) || userAge.value === "") {
         event.preventDefault();
@@ -63,21 +64,39 @@ let nextQuestionButton = document.getElementById("next-question");
 let availableQuestions = [];
 
 //all questions
-let questionsKids = [
-    {question: "Is your room clean and in order?"},
-    {question: "Is your homework always done on time?"},
-    {question: "Do you like cooking?"},
-    {question: "Do you often help others when they are stuck?"},
-    {question: "Do you like when it snows?"},
+let questionsKids = [{
+        question: "Is your room clean and in order?"
+    },
+    {
+        question: "Is your homework always done on time?"
+    },
+    {
+        question: "Do you like cooking?"
+    },
+    {
+        question: "Do you often help others when they are stuck?"
+    },
+    {
+        question: "Do you like when it snows?"
+    },
 ];
 
 
-let questionsAdults = [
-    {question: "Is your house clean and in order?"},
-    {question: "Are you satisfied with your career?"},
-    {question: "Do you like cooking?"},
-    {question: "Do you often help others when they are stuck?"},
-    {question: "Do you like when it snows?"},
+let questionsAdults = [{
+        question: "Is your house clean and in order?"
+    },
+    {
+        question: "Are you satisfied with your career?"
+    },
+    {
+        question: "Do you like cooking?"
+    },
+    {
+        question: "Do you often help others when they are stuck?"
+    },
+    {
+        question: "Do you like when it snows?"
+    },
 ];
 
 
@@ -98,14 +117,14 @@ nextQuestionButton.addEventListener("click", getNextQuestion);
  * Starts quiz selecting random questions from kids or adults questions array
  */
 
-function startQuiz () {
+function startQuiz() {
     score = 0;
     questionCounter = 0;
     ageBox.style.display = "none"
     questionCard.style.display = "block";
 
     if (userAge.value < 18) {
-    availableQuestions = [...questionsKids];
+        availableQuestions = [...questionsKids];
     } else {
         availableQuestions = [...questionsAdults];
     }
@@ -114,17 +133,39 @@ function startQuiz () {
 }
 
 /**
- * inrements question counter, selects next random question out of available array and takes it out to avoid repetition
+ * increments question counter, selects next random question out of available array and takes it out to avoid repetition
  */
 
-function getNextQuestion () {
+function getNextQuestion() {
+    if (questionCounter >= maxQuestionCount) {
+        
+        questionCard.style.display = "none";
+        resultsCard.style.display = "block";
+        
+    }
+
     questionCounter++;
     document.getElementById("question-number").innerText = `${questionCounter}`;
     let questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
     availableQuestions.splice(questionIndex, 1);
+
+    nextQuestionButton.disabled = true;
+    document.getElementById("display-validation").innerText = "Please select an answer";
 }
 
+/**
+ * validates if user selected answer and removes disabled from the next question button
+ */
 
+let radios = document.querySelectorAll("input[type=radio]")
 
+for (i of radios) {
+    i.addEventListener("click", (event) => {
+            if (event.target.checked) {
+                nextQuestionButton.disabled = false
+            }
+        }
+        )
+    }
