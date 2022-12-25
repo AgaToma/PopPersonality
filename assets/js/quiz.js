@@ -39,4 +39,6 @@ function validateAgeInput (event) {
 
 }
 
+//question group distribution function
+
 
