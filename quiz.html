@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link to stylesheet-->
+    <link href="assets/css/styles.css" rel="stylesheet">
     <title>PopPersonality</title>
 </head>
-<body>
-    <div id="title-box">
 
+<body>
+    <div id="title-box" class="container">
+        <a href="index.html" alt="Go to home/start page">
+            <h1>PopPersonality</h1>
+        </a>
     </div>
-    
+    <!--Name input box-->
+    <div id="name-box" class="container">
+        <form action="#">
+            <label for="name">Please tell us your name</label>
+            <input type="text" id="name" maxlength="15">
+            <button type="submit" id="intro-next" class="control-btn">Next</button>
+        </form>
+    </div>
+    <!--Age input box-->
+    <div id="age-box" class="container hidden">
+        <form action="#">
+            <label id="age-label" for="age">Please tell us your age</label>
+            <input type="text" id="age-input" pattern="[0-9]">
+            <button type="submit" class="control-btn" id="start-quiz">
+                <a href="quiz.html">Start quiz</a>
+            </button>
+        </form>
+    </div>
+
+    <!--Question cards-->
+
+    <!--Question card age group1-->
     <div id="question-card-age1" class="container">
 
     </div>
+    <!--Question card age group2-->
     <div id="question-card-age2" class="container">
 
     </div>
+    <!--Question card age group3-->
     <div id="question-card-age3" class="container">
 
     </div>
+
+    <!--Results cards -->
     <div id="results-card" class="hidden">
 
         <button class="control-btn">Finish</button>
-    </div>
     <script src="assets/js/quiz.js"></script>
 </body>
+
 </html>
