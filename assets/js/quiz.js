@@ -55,9 +55,10 @@ let question = document.getElementById("question");
 
 let questionCard = document.getElementById("question-card");
 let currentQuestion = {};
-let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
+let nextQuestionButton = document.getElementById("next-question");
+
 //question for questions to be selected from minus questions already used
 let availableQuestions = [];
 
@@ -91,6 +92,7 @@ const maxQuestionCount = 10;
 //quiz event listeners
 
 startQuizButton.addEventListener("click", startQuiz);
+nextQuestionButton.addEventListener("click", getNextQuestion);
 
 /**
  * Starts quiz selecting random questions from kids or adults questions array
@@ -111,12 +113,17 @@ function startQuiz () {
     getNextQuestion();
 }
 
+/**
+ * inrements question counter, selects next random question out of available array and takes it out to avoid repetition
+ */
+
 function getNextQuestion () {
     questionCounter++;
+    document.getElementById("question-number").innerText = `${questionCounter}`;
     let questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
-
+    availableQuestions.splice(questionIndex, 1);
 }
 
 
