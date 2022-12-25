@@ -8,12 +8,16 @@ rulesClose.addEventListener("click", closeRulesModal);
 
 
 
-//Opens rules modal when user clicks Rules button
+/** 
+ * Opens rules modal when user clicks Rules button
+*/
 function openRulesModal () {
     rulesModal.style.display = "block";
 }
 
-//Closes rules modal when user clicks x 
+/** 
+ * Closes rules modal when user clicks x
+*/
 function closeRulesModal () {
     rulesModal.style.display = "none"
 }

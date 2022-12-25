@@ -4,11 +4,15 @@ let userName = document.getElementById("name");
 let ageBox = document.getElementById("age-box");
 let userAge = document.getElementById("age-input");
 let startQuizButton = document.getElementById("start-quiz");
+let question = document.getElementById("question");
 
 introNextButton.addEventListener("click", showAgeBox);
 startQuizButton.addEventListener("click", validateAgeInput);
 
-//Submits name input, hides input and shows age box
+/** 
+ * Submits name input, hides input and shows age box
+*/
+
 function showAgeBox (event) {
 
     if (userName.value === "") {
@@ -25,8 +29,10 @@ function showAgeBox (event) {
     }
 }
 
+/** 
+ * validates age input presence and if number format
+*/
 
-//validates age input presence and if number format
 
 function validateAgeInput (event) {
 
@@ -39,6 +45,6 @@ function validateAgeInput (event) {
 
 }
 
-//question group distribution function
+//distributes user to correct age group and starts quiz
 
 
