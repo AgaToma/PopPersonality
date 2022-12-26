@@ -153,39 +153,39 @@ function startQuiz() {
 
 function getNextQuestion() {
     if (questionCounter >= maxQuestionCount) {
-        
+
         questionCard.style.display = "none";
         resultsCard.style.display = "block";
-        
-    } 
 
-    questionCounter++;
-    document.getElementById("question-number").innerText = `${questionCounter}`;
-    let questionIndex = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
-    availableQuestions.splice(questionIndex, 1);
+    } else {
 
-    nextQuestionButton.disabled = true;
-    document.getElementById("display-validation").innerText = "Please select an answer";
-}
+        questionCounter++;
+        document.getElementById("question-number").innerText = `${questionCounter}`;
+        let questionIndex = Math.floor(Math.random() * availableQuestions.length);
+        currentQuestion = availableQuestions[questionIndex];
+        question.innerText = currentQuestion.question;
+        availableQuestions.splice(questionIndex, 1);
 
-/**
- * validates if user selected answer and removes disabled from the next question button
- */
+        nextQuestionButton.disabled = true;
+        document.getElementById("display-validation").innerText = "Please select an answer";
+    }
 
-let radios = document.querySelectorAll("input[type=radio]")
-let answers = [];
+    /**
+     * validates if user selected answer and removes disabled from the next question button
+     */
 
-for (i of radios) {
-    i.addEventListener("click", (event) => {
+    let radios = document.querySelectorAll("input[type=radio]")
+    let answer;
+    let score = 0;
+
+    for (i of radios) {
+        i.addEventListener("click", (event) => {
             if (event.target.checked) {
                 nextQuestionButton.disabled = false
             }
-            answers = event.target.value;
-                console.log(answers);
-        }
-        )
+            answer = event.target.value;
+            console.log(answer);
+        })
     }
 
-    
+}
