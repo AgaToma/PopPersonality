@@ -180,7 +180,10 @@ for (i of radios) {
     i.addEventListener("click", (event) => {
             if (event.target.checked) {
                 nextQuestionButton.disabled = false
+                console.log(event.target.value);
             }
         }
         )
     }
+
+    
