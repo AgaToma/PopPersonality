@@ -157,7 +157,7 @@ function getNextQuestion() {
         questionCard.style.display = "none";
         resultsCard.style.display = "block";
         
-    }
+    } 
 
     questionCounter++;
     document.getElementById("question-number").innerText = `${questionCounter}`;
@@ -175,12 +175,14 @@ function getNextQuestion() {
  */
 
 let radios = document.querySelectorAll("input[type=radio]")
+let answers = [];
 
 for (i of radios) {
     i.addEventListener("click", (event) => {
             if (event.target.checked) {
                 nextQuestionButton.disabled = false
-                console.log(event.target.value);
+                answers = event.target.value;
+                console.log(answers);
             }
         }
         )
