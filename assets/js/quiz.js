@@ -79,6 +79,21 @@ let questionsKids = [{
     {
         question: "Do you like when it snows?"
     },
+    {
+        question: "Do you wear a hat on when it gets cold?"
+    },
+    {
+        question: "Are you a fast runner?"
+    },
+    {
+        question: "Do you read many books?"
+    },
+    {
+        question: "Do you ride a bicycle?"
+    },
+    {
+        question: "Do you like dogs?"
+    },
 ];
 
 
