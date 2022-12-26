@@ -52,7 +52,8 @@ function validateAgeInput(event) {
 //quiz area variables
 
 let question = document.getElementById("question");
-//answers array - to be added
+let radios = document.querySelectorAll("input[type=radio]");
+let choices = Array.from(document.getElementsByName("answer"));
 
 let questionCard = document.getElementById("question-card");
 let currentQuestion = {};
@@ -174,7 +175,6 @@ function getNextQuestion() {
      * validates if user selected answer and removes disabled from the next question button
      */
 
-    let radios = document.querySelectorAll("input[type=radio]")
     let answer;
     let score = 0;
 
