@@ -175,16 +175,21 @@ function getNextQuestion() {
      * validates if user selected answer and removes disabled from the next question button
      */
 
-    let answer;
-    let score = 0;
+    
+    let answers;
 
     for (i of radios) {
         i.addEventListener("click", (event) => {
             if (event.target.checked) {
                 nextQuestionButton.disabled = false
             }
-            answer = event.target.value;
-            console.log(answer);
+nextQuestionButton.addEventListener("click", function () {
+            //get data attribute for the selected answers
+           answers = event.target.getAttribute("data-number");
+           //changer nodeList into an array
+           let answersArray = [...answers];
+           console.log(answersArray);})
+            
         })
     }
 
