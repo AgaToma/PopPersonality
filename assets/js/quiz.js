@@ -141,7 +141,7 @@ function startQuiz() {
     }
 
     getNextQuestion();
-}
+};
 
 /**
  * increments question counter, selects next random question out of available array and takes it out to avoid repetition
@@ -160,36 +160,39 @@ function getNextQuestion() {
         let questionIndex = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionIndex];
         question.innerText = currentQuestion.question;
+
+        choices.forEach((choice) => {
+            const number = choice.dataset['number'];
+            choice.innerText = currentQuestion['choice' + number];
+        });
+
         availableQuestions.splice(questionIndex, 1);
 
         nextQuestionButton.disabled = true;
         document.getElementById("display-validation").innerText = "Please select an answer";
-    }
+    };
 
     /**
      * validates if user selected answer and removes disabled from the next question button
      */
 
-    
-    let answers;
 
-    for (var i of radios) {
+
+    for (let i of radios) {
         i.addEventListener("click", (event) => {
             if (event.target.checked) {
                 nextQuestionButton.disabled = false
             }
-nextQuestionButton.addEventListener("click", function () {
-            //get data attribute for the selected answers
-          answers = event.target.getAttribute("data-number");
-           //changer nodeList into an array
-           let answersArray = [...answers];
-           console.log(answersArray);
-
-
-            
         })
-    })
-}
-console.log(i);
+    }
+};
 
-}
+choices.forEach((choice) => {
+    choice.addEventListener('click', (event) => {
+        
+        const selectedChoice = event.target;
+        const selectedAnswer = selectedChoice.dataset['number'];
+        console.log(selectedAnswer);
+        
+    });
+});
