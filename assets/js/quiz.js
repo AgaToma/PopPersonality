@@ -65,55 +65,25 @@ let nextQuestionButton = document.getElementById("next-question");
 let availableQuestions = [];
 
 //all questions
-let questionsKids = [{
-        question: "Is your room clean and in order?"
-    },
-    {
-        question: "Is your homework always done on time?"
-    },
-    {
-        question: "Do you like cooking?"
-    },
-    {
-        question: "Do you often help others when they are stuck?"
-    },
-    {
-        question: "Do you like when it snows?"
-    },
-    {
-        question: "Do you wear a hat on when it gets cold?"
-    },
-    {
-        question: "Are you a fast runner?"
-    },
-    {
-        question: "Do you read many books?"
-    },
-    {
-        question: "Do you ride a bicycle?"
-    },
-    {
-        question: "Do you like dogs?"
-    },
-];
+let questionsKids = [];
 
+fetch("assets/js/questionsKids.json")
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedQuestions) => {
+        questionsKids = loadedQuestions;
+    });
 
-let questionsAdults = [{
-        question: "Is your house clean and in order?"
-    },
-    {
-        question: "Are you satisfied with your career?"
-    },
-    {
-        question: "Do you like cooking?"
-    },
-    {
-        question: "Do you often help others when they are stuck?"
-    },
-    {
-        question: "Do you like when it snows?"
-    },
-];
+let questionsAdults = [];
+
+fetch("assets/js/questionsAdults.json")
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedQuestions) => {
+        questionsAdults = loadedQuestions;
+    });
 
 
 //maximum amount of questions a user will get
