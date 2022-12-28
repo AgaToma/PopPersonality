@@ -192,7 +192,8 @@ choices.forEach((choice) => {
         
         const selectedChoice = event.target;
         const selectedAnswer = selectedChoice.dataset['number'];
-        console.log(selectedAnswer);
-        
+        /*console.log(Number(selectedAnswer));*/
+        score = score + Number(selectedAnswer);
+        console.log(score);
     });
 });
