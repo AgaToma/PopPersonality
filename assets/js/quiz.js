@@ -181,7 +181,9 @@ function getNextQuestion() {
     for (let i of radios) {
         i.addEventListener("click", (event) => {
             if (event.target.checked) {
-                nextQuestionButton.disabled = false
+                nextQuestionButton.disabled = false;
+                document.getElementById("display-validation").innerText = "";
+
             }
         })
     }
@@ -192,7 +194,6 @@ choices.forEach((choice) => {
         
         const selectedChoice = event.target;
         const selectedAnswer = selectedChoice.dataset['number'];
-        /*console.log(Number(selectedAnswer));*/
         score = score + Number(selectedAnswer);
         console.log(score);
     });
