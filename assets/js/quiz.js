@@ -31,7 +31,7 @@ function showAgeBox(event) {
     </label>
     `
     }
-}
+};
 
 /** 
  * validates age input presence and if number format
@@ -47,7 +47,7 @@ function validateAgeInput(event) {
         console.log("Age entered")
     }
 
-}
+};
 
 //quiz area variables
 
@@ -64,7 +64,7 @@ let nextQuestionButton = document.getElementById("next-question");
 //question for questions to be selected from minus questions already used
 let availableQuestions = [];
 
-//all questions
+//all questions pulled from json files
 let questionsKids = [];
 
 fetch("assets/js/questionsKids.json")
@@ -146,8 +146,6 @@ function getNextQuestion() {
      * validates if user selected answer and removes disabled from the next question button
      */
 
-
-
     for (let i of radios) {
         i.addEventListener("click", (event) => {
             if (event.target.checked) {
@@ -158,6 +156,10 @@ function getNextQuestion() {
         })
     }
 };
+
+/**
+ * captures user selected answer data number and adds it to the score
+ */
 
 choices.forEach((choice) => {
     choice.addEventListener('click', (event) => {
