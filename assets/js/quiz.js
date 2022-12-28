@@ -116,11 +116,6 @@ let questionsAdults = [{
 ];
 
 
-//scores from each answer type
-const answerYes = 10;
-const answerSometimes = 5;
-const answerNo = 1;
-
 //maximum amount of questions a user will get
 const maxQuestionCount = 10;
 
@@ -178,19 +173,23 @@ function getNextQuestion() {
     
     let answers;
 
-    for (i of radios) {
+    for (var i of radios) {
         i.addEventListener("click", (event) => {
             if (event.target.checked) {
                 nextQuestionButton.disabled = false
             }
 nextQuestionButton.addEventListener("click", function () {
             //get data attribute for the selected answers
-           answers = event.target.getAttribute("data-number");
+          answers = event.target.getAttribute("data-number");
            //changer nodeList into an array
            let answersArray = [...answers];
-           console.log(answersArray);})
+           console.log(answersArray);
+
+
             
         })
-    }
+    })
+}
+console.log(i);
 
 }
