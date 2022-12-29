@@ -1,21 +1,33 @@
 [{
         "name": "Chaorion",
         "story": "Ghost Force",
-        "description": "Mischevious ghost"
+        "description": "Mischevious ghost",
+        "scoreId": "1",
+        "score": "10 - 25",
+        "photo": "link"
     },
     {
         "name": "Elsa",
         "story": "Frozen",
-        "description": "Smart & kind with icy superpowers"
+        "description": "Smart & kind with icy superpowers",
+        "scoreId": "2",
+        "score": "25 - 50",
+        "photo": "link"
     },
     {
         "name": "Kion",
         "story": "Lion Guard",
-        "description": "Full of energy and fun ideas"
+        "description": "Full of energy and fun ideas",
+        "scoreId": "4",
+        "score": "50 - 75",
+        "photo": "link"
     },
     {
         "name": "Kevin the Minion",
         "story": "Minions",
-        "description": "Loyal and resourceful"
+        "description": "Loyal and resourceful",
+        "scoreId": "3",
+        "score": "75 - 100",
+        "photo": "link"
     }
 ]
