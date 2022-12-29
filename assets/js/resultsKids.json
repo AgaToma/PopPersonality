@@ -1,0 +1,21 @@
+[{
+        "name": "Chaorion",
+        "story": "Ghost Force",
+        "description": "Mischevious ghost"
+    },
+    {
+        "name": "Elsa",
+        "story": "Frozen",
+        "description": "Smart & kind with icy superpowers"
+    },
+    {
+        "name": "Kion",
+        "story": "Lion Guard",
+        "description": "Full of energy and fun ideas"
+    },
+    {
+        "name": "Kevin the Minion",
+        "story": "Minions",
+        "description": "Loyal and resourceful"
+    }
+]

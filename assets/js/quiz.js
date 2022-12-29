@@ -169,7 +169,8 @@ choices.forEach((choice) => {
         score = score + Number(selectedAnswer);
 
         if (loopCounter === maxQuestionCount){
-        console.log(score);}
+        console.log(score);};
 
     });
 });
+
