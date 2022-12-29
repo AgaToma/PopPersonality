@@ -160,13 +160,16 @@ function getNextQuestion() {
 /**
  * captures user selected answer data number and adds it to the score
  */
-
+let loopCounter = 0;
 choices.forEach((choice) => {
     choice.addEventListener('click', (event) => {
-        
+        loopCounter++;
         const selectedChoice = event.target;
         const selectedAnswer = selectedChoice.dataset['number'];
         score = score + Number(selectedAnswer);
-        console.log(score);
+
+        if (loopCounter === 10){
+        console.log(score);}
+
     });
 });
