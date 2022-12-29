@@ -168,7 +168,7 @@ choices.forEach((choice) => {
         const selectedAnswer = selectedChoice.dataset['number'];
         score = score + Number(selectedAnswer);
 
-        if (loopCounter === 10){
+        if (loopCounter === maxQuestionCount){
         console.log(score);}
 
     });
