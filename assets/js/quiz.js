@@ -121,6 +121,7 @@ function startQuiz() {
 
 function getNextQuestion() {
 
+    //Push current answer when next button is clicked to only store the right choice
     allAnswers.push(selectedAnswer);
     console.log(allAnswers);
 
@@ -170,7 +171,7 @@ let allAnswers = [];
 let selectedAnswer = "";
 
 //Push current answer when next button is clicked to only store the right choice
-//allAnswers.push(selectedAnswer);
+
 /**
  * captures user selected answer data number and adds it to the score
  */
