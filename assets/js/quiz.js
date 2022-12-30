@@ -28,8 +28,6 @@ let allAnswers = [];
 //Set answer on radio click (this overrides each click)
 let selectedAnswer = "";
 
-
-
 //quiz intro event listeners
 introNextButton.addEventListener("click", showAgeBox);
 startQuizButton.addEventListener("click", validateAgeInput);
@@ -59,7 +57,6 @@ function showAgeBox(event) {
 /** 
  * validates age input presence and if number format
  */
-
 
 function validateAgeInput(event) {
 
@@ -130,8 +127,15 @@ function startQuiz() {
 function getNextQuestion() {
 
     //Push current answer when next button is clicked to only store the right choice
-    allAnswers.push(selectedAnswer);
+    allAnswers.push(Number(selectedAnswer));
     console.log(allAnswers);
+    //Code for reduce method from MDN docs
+    score = allAnswers.reduce(
+        (accumulator, currentValue) => accumulator + currentValue,
+        0
+    );
+    console.log(score);
+
 
     if (questionCounter >= maxQuestionCount) {
 
@@ -184,9 +188,8 @@ choices.forEach((choice) => {
         selectedAnswer = selectedChoice.dataset['number'];
         score = score + Number(selectedAnswer);
 
-        if (loopCounter === maxQuestionCount){
-        console.log(score);};
+        /*if (loopCounter === maxQuestionCount){
+        console.log(score);};*/
 
     });
 });
-
