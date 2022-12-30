@@ -7,6 +7,8 @@ let userAge = document.getElementById("age-input");
 let startQuizButton = document.getElementById("start-quiz");
 let resultsCard = document.getElementById("results-card");
 
+
+
 //quiz intro event listeners
 introNextButton.addEventListener("click", showAgeBox);
 startQuizButton.addEventListener("click", validateAgeInput);
@@ -118,6 +120,10 @@ function startQuiz() {
  */
 
 function getNextQuestion() {
+
+    allAnswers.push(selectedAnswer);
+    console.log(allAnswers);
+
     if (questionCounter >= maxQuestionCount) {
 
         questionCard.style.display = "none";
@@ -157,6 +163,14 @@ function getNextQuestion() {
     }
 };
 
+//store all answers
+let allAnswers = [];
+
+//Set answer on radio click (this overrides each click)
+let selectedAnswer = "";
+
+//Push current answer when next button is clicked to only store the right choice
+//allAnswers.push(selectedAnswer);
 /**
  * captures user selected answer data number and adds it to the score
  */
@@ -164,8 +178,8 @@ let loopCounter = 0;
 choices.forEach((choice) => {
     choice.addEventListener('click', (event) => {
         loopCounter++;
-        const selectedChoice = event.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        selectedChoice = event.target;
+        selectedAnswer = selectedChoice.dataset['number'];
         score = score + Number(selectedAnswer);
 
         if (loopCounter === maxQuestionCount){
