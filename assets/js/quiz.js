@@ -63,8 +63,6 @@ function validateAgeInput(event) {
     if (isNaN(userAge.value) || userAge.value === "") {
         event.preventDefault();
         alert("Please enter your age in a number format");
-    } else {
-        console.log("Age entered")
     }
 
 };
@@ -90,6 +88,16 @@ fetch("assets/js/questionsAdults.json")
     })
     .then((loadedQuestions) => {
         questionsAdults = loadedQuestions;
+    });
+
+let resultsKids = [];
+
+fetch("assets/js/resultsKids.json")
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedQuestions) => {
+        resultsKids = loadedQuestions;
     });
 
 
@@ -128,7 +136,7 @@ function getNextQuestion() {
 
     //Push current answer when next button is clicked to only store the right choice
     allAnswers.push(Number(selectedAnswer));
-    console.log(allAnswers);
+    
     //Code for reduce method from MDN docs
     score = allAnswers.reduce(
         (accumulator, currentValue) => accumulator + currentValue,
@@ -186,10 +194,6 @@ choices.forEach((choice) => {
         loopCounter++;
         selectedChoice = event.target;
         selectedAnswer = selectedChoice.dataset['number'];
-        score = score + Number(selectedAnswer);
-
-        /*if (loopCounter === maxQuestionCount){
-        console.log(score);};*/
-
+       
     });
 });
