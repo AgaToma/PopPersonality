@@ -5,7 +5,6 @@ let userName = document.getElementById("name");
 let ageBox = document.getElementById("age-box");
 let userAge = document.getElementById("age-input");
 let startQuizButton = document.getElementById("start-quiz");
-let resultsCard = document.getElementById("results-card");
 
 //quiz area variables
 
@@ -27,6 +26,12 @@ let allAnswers = [];
 
 //Set answer on radio click (this overrides each click)
 let selectedAnswer = "";
+
+//quiz results variables
+let resultsCard = document.getElementById("results-card");
+let charCard = document.getElementById("character-card");
+let charName = document.getElementById("character-name");
+let availableResults = [];
 
 //quiz intro event listeners
 introNextButton.addEventListener("click", showAgeBox);
@@ -92,12 +97,13 @@ fetch("assets/js/questionsAdults.json")
 
 let resultsKids = [];
 
+
 fetch("assets/js/resultsKids.json")
     .then((res) => {
         return res.json();
     })
-    .then((loadedQuestions) => {
-        resultsKids = loadedQuestions;
+    .then((loadedResults) => {
+        resultsKids = loadedResults;
     });
 
 
@@ -136,7 +142,7 @@ function getNextQuestion() {
 
     //Push current answer when next button is clicked to only store the right choice
     allAnswers.push(Number(selectedAnswer));
-    
+
     //Code for reduce method from MDN docs
     score = allAnswers.reduce(
         (accumulator, currentValue) => accumulator + currentValue,
@@ -149,6 +155,7 @@ function getNextQuestion() {
 
         questionCard.style.display = "none";
         resultsCard.style.display = "block";
+        getResults();
 
     } else {
 
@@ -194,6 +201,54 @@ choices.forEach((choice) => {
         loopCounter++;
         selectedChoice = event.target;
         selectedAnswer = selectedChoice.dataset['number'];
-       
+
     });
 });
+
+/**
+ * Assigns result cards depending on score results
+ */
+
+function getResults() {
+
+
+    availableResults = [...resultsKids];
+    console.log(availableResults);
+
+
+    if (score >= 10 && score <= 25) {
+        charName.innerText = `${availableResults[0].name}`;
+        charCard.innerHTML = `
+        <div id="character-card">
+            <div id="character-img">${availableResults[0].photo}</div>
+            <div id="character-description">${availableResults[0].description}</div>
+        </div>`
+
+    } else if (score > 15 && score <= 50) {
+        charName.innerText = `${availableResults[1].name}`;
+        charCard.innerHTML = `
+        <div id="character-card">
+            <div id="character-img">${availableResults[1].photo}</div>
+            <div id="character-description">${availableResults[1].description}</div>
+        </div>`
+
+    } else if (score > 50 && score <= 75) {
+        charName.innerText = `${availableResults[2].name}`;
+        charCard.innerHTML = `
+        <div id="character-card">
+            <div id="character-img">${availableResults[2].photo}</div>
+            <div id="character-description">${availableResults[2].description}</div>
+        </div>`
+
+    } else if (score > 75) {
+        charName.innerText = `${availableResults[3].name}`;
+        charCard.innerHTML = `
+        <div id="character-card">
+            <div id="character-img">${availableResults[3].photo}</div>
+            <div id="character-description">${availableResults[3].description}</div>
+        </div>`
+
+    } else {
+        console.log("error");
+    }
+};
