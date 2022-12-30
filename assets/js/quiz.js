@@ -7,6 +7,27 @@ let userAge = document.getElementById("age-input");
 let startQuizButton = document.getElementById("start-quiz");
 let resultsCard = document.getElementById("results-card");
 
+//quiz area variables
+
+let question = document.getElementById("question");
+let radios = document.querySelectorAll("input[type=radio]");
+let choices = Array.from(document.getElementsByName("answer"));
+
+let questionCard = document.getElementById("question-card");
+let currentQuestion = {};
+let score = 0;
+let questionCounter = 0;
+let nextQuestionButton = document.getElementById("next-question");
+
+//question for questions to be selected from minus questions already used
+let availableQuestions = [];
+
+//store all answers
+let allAnswers = [];
+
+//Set answer on radio click (this overrides each click)
+let selectedAnswer = "";
+
 
 
 //quiz intro event listeners
@@ -51,20 +72,7 @@ function validateAgeInput(event) {
 
 };
 
-//quiz area variables
 
-let question = document.getElementById("question");
-let radios = document.querySelectorAll("input[type=radio]");
-let choices = Array.from(document.getElementsByName("answer"));
-
-let questionCard = document.getElementById("question-card");
-let currentQuestion = {};
-let score = 0;
-let questionCounter = 0;
-let nextQuestionButton = document.getElementById("next-question");
-
-//question for questions to be selected from minus questions already used
-let availableQuestions = [];
 
 //all questions pulled from json files
 let questionsKids = [];
@@ -164,13 +172,6 @@ function getNextQuestion() {
     }
 };
 
-//store all answers
-let allAnswers = [];
-
-//Set answer on radio click (this overrides each click)
-let selectedAnswer = "";
-
-//Push current answer when next button is clicked to only store the right choice
 
 /**
  * captures user selected answer data number and adds it to the score
