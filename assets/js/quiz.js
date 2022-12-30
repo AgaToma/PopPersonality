@@ -106,6 +106,28 @@ fetch("assets/js/resultsKids.json")
         resultsKids = loadedResults;
     });
 
+let resultsTeens = [];
+
+
+    fetch("assets/js/resultsTeens.json")
+        .then((res) => {
+            return res.json();
+        })
+        .then((loadedResults) => {
+            resultsTeens = loadedResults;
+        });
+
+        let resultsAdults = [];
+
+
+        fetch("assets/js/resultsAdults.json")
+            .then((res) => {
+                return res.json();
+            })
+            .then((loadedResults) => {
+                resultsAdults = loadedResults;
+            });
+
 
 //maximum amount of questions a user will get
 const maxQuestionCount = 10;
@@ -211,9 +233,13 @@ choices.forEach((choice) => {
 
 function getResults() {
 
-
-    availableResults = [...resultsKids];
-    console.log(availableResults);
+    if (userAge.value <= 12) {
+        availableResults = [...resultsKids];
+    } else if (userAge.value > 12 && userAge.value < 18){
+        availableResults = [...resultsTeens];
+    } else {
+        availableResults = [...resultsAdults];
+    }
 
 
     if (score >= 10 && score <= 25) {
@@ -223,7 +249,6 @@ function getResults() {
             <div id="character-img">${availableResults[0].photo}</div>
             <div id="character-description">${availableResults[0].description}</div>
         </div>`
-
     } else if (score > 15 && score <= 50) {
         charName.innerText = `${availableResults[1].name}`;
         charCard.innerHTML = `
