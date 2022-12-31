@@ -47,7 +47,6 @@ function showAgeBox() {
 
     if (userName.value === "") {
         introNextButton.disabled = true;
-        userName.innerHTML = `<input type="text" id="name-input" maxlength="15" placeholder="Please enter your name here to continue">`;
         userName.addEventListener("input", function enableButton (){
             introNextButton.disabled = false;
         })
@@ -56,7 +55,7 @@ function showAgeBox() {
         ageBox.style.display = "block";
 
         document.getElementById("age-label").innerHTML = `
-    <label id="age-label" for="age">${userName.value}, you are nearly set. Please enter you age, so we can assign you to the correct group
+    <label id="age-label" for="age">${userName.value}, you are nearly set. Please enter you age to continue, so we can assign you to the correct group
     </label>
     `
     }
@@ -66,13 +65,16 @@ function showAgeBox() {
  * validates age input presence and if number format
  */
 
-function validateAgeInput(event) {
+function validateAgeInput() {
 
-    if (isNaN(userAge.value) || userAge.value === "") {
-        event.preventDefault();
-        alert("Please enter your age in a number format");
-    }
+    if (userAge.value === "" || isNaN(userAge.value)) {
+        startQuizButton.disabled = true;
+        userAge.addEventListener("input", function enableButton (){
+            startQuizButton.disabled = false;
+            startQuizButton.addEventListener("click", startQuiz);
+        })
 
+}
 };
 
 
@@ -137,7 +139,7 @@ const maxQuestionCount = 10;
 
 //quiz event listeners
 
-startQuizButton.addEventListener("click", startQuiz);
+
 nextQuestionButton.addEventListener("click", getNextQuestion);
 
 /**
