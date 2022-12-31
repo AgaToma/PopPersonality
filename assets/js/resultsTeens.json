@@ -4,7 +4,7 @@
     "description": "Powerful and lost",
     "scoreId": "1",
     "score": "10 - 25",
-    "photo": "5"
+    "photo": "../assets/images/eleven.webp"
 },
 {
     "name": "Jack Sparrow",
@@ -12,7 +12,7 @@
     "description": "Lacks responsibility, but a fun companion",
     "scoreId": "2",
     "score": "25 - 50",
-    "photo": "6"
+    "photo": "../assets/images/jack.webp"
 },
 {
     "name": "Luke Skywalker",
@@ -20,7 +20,7 @@
     "description": "The force is strong with him",
     "scoreId": "4",
     "score": "50 - 75",
-    "photo": "7"
+    "photo": "../assets/images/luke.webp"
 },
 {
     "name": "Enid",
@@ -28,6 +28,6 @@
     "description": "Loyal and resourceful",
     "scoreId": "3",
     "score": "75 - 100",
-    "photo": "8"
+    "photo": "../assets/images/enid.webp"
 }
 ]

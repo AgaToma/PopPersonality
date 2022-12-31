@@ -4,7 +4,7 @@
     "description": "Man of principles, but knows nothing",
     "scoreId": "1",
     "score": "10 - 25",
-    "photo": "9"
+    "photo": "../assets/images/jon.webp"
 },
 {
     "name": "Geralt of Rivia",
@@ -12,7 +12,7 @@
     "description": "Strong and resilient, broods too much",
     "scoreId": "2",
     "score": "25 - 50",
-    "photo": "10"
+    "photo": "../assets/images/geralt.webp"
 },
 {
     "name": "Lagertha",
@@ -20,7 +20,7 @@
     "description": "Powerful and kind, excels both as a nurturer and a warrior",
     "scoreId": "4",
     "score": "50 - 75",
-    "photo": "11"
+    "photo": "../assets/images/lagertha.webp"
 },
 {
     "name": "Jyn Erso",
@@ -28,6 +28,6 @@
     "description": "Determined with great sense of responsibility, thinks outside the box",
     "scoreId": "3",
     "score": "75 - 100",
-    "photo": "12"
+    "photo": "../assets/images/jynerso.webp"
 }
 ]
