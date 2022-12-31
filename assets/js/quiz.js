@@ -1,7 +1,7 @@
 //quiz intro area variables
 let nameBox = document.getElementById("name-box");
 let introNextButton = document.getElementById("intro-next");
-let userName = document.getElementById("name");
+let userName = document.getElementById("name-input");
 let ageBox = document.getElementById("age-box");
 let userAge = document.getElementById("age-input");
 let startQuizButton = document.getElementById("start-quiz");
@@ -43,11 +43,14 @@ startQuizButton.addEventListener("click", validateAgeInput);
  * Submits name input, hides input and shows age box
  */
 
-function showAgeBox(event) {
+function showAgeBox() {
 
     if (userName.value === "") {
-        event.preventDefault();
-        alert("Please enter your name");
+        introNextButton.disabled = true;
+        userName.innerHTML = `<input type="text" id="name-input" maxlength="15" placeholder="Please enter your name here to continue">`;
+        userName.addEventListener("input", function enableButton (){
+            introNextButton.disabled = false;
+        })
     } else {
         nameBox.style.display = "none";
         ageBox.style.display = "block";
