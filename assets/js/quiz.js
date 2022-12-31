@@ -246,7 +246,7 @@ function getResults() {
         charName.innerText = `${availableResults[0].name}`;
         charCard.innerHTML = `
         <div id="character-card">
-            <div id="character-img">${availableResults[0].photo}</div>
+            <div id="character-img"><img src=${availableResults[0].photo}></div>
             <div id="character-description">${availableResults[0].description}</div>
         </div>`
     } else if (score > 15 && score <= 50) {
