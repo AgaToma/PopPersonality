@@ -4,6 +4,8 @@
 }
 
 body {
+    background-image: url("../images/david-becker-YCF34YywBrs-unsplash\ \(1\).webp");
+    background-size: cover;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -23,7 +25,7 @@ a {
     border-radius: 5px;
     padding: 1rem;
     margin: 1rem;
-    background-color: rgb(160, 157, 157);
+    background-color: rgb(218, 208, 208);
 }
 
 .hidden {
