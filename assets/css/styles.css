@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Yeseva+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
 * {
     margin:0;
     padding:0;
@@ -14,6 +14,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
 }
 
 main {
@@ -37,6 +39,15 @@ a {
     color:lightpink;
 }
 
+h1 {
+  font-weight: 400;
+  letter-spacing: 1rem;
+  font-family: Times;
+  font-weight: bold;
+}
+
+
+
 .container {
     width: 80%;
     text-align: center;
@@ -46,6 +57,7 @@ a {
     background-color: rgba(27, 25, 27, 0.6);
     font-size: 2rem;
     color:rgb(245, 245, 245);
+    line-height: 3rem;
 
 }
 
@@ -89,6 +101,6 @@ a {
     position:fixed;
     bottom: 15px;
     color: white;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     
   }
