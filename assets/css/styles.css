@@ -17,16 +17,18 @@ body {
 main {
     margin:0;
     height: 70vh;
-    width: 100vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(58, 57, 58, 0.6);
+    border-radius: 5px;
 }
 
 a {
     text-decoration: none;
-    color:aliceblue;
+    color:rgb(224, 65, 139);
 }
 
 .container {
@@ -35,19 +37,21 @@ a {
     padding: 2rem;
     border-radius: 5px;
     margin: 1rem;
-    color:rgba(245, 243, 243, 0.6);
+    background-color: rgba(27, 25, 27, 0.6);
     font-size: 2rem;
-    color:black;
+    color:rgb(245, 245, 245);
 
 }
 
 #title-box {
     text-align: center;
     padding: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 2rem;
     font-size: 2rem;
     color:rgba(245, 243, 243, 0.6);
     letter-spacing: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .hidden {
