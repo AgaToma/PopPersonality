@@ -17,57 +17,65 @@
         <a href="index.html" alt="Go to home/start page">
             <h1>PopPersonality</h1>
         </a>
-     
+
     </div>
-       </header>
+    </header>
     <main>
-    <!--Name input box-->
-    <div id="name-box" class="container">
-        <form action="#">
-            <label for="name">Please tell us your name to continue</label>
-            <input type="text" id="name-input" maxlength="15">
-            <button type="submit" id="intro-next" class="control-btn">Next</button>
-        </form>
-    </div>
-    <!--Age input box-->
-    <div id="age-box" class="container hidden">
-        <form action="#">
-            <label id="age-label" for="age">Please tell us your age</label>
-            <input type="text" id="age-input">
-            <button type="submit" class="control-btn" id="start-quiz">Start quiz</button>
-        </form>
-    </div>
-
-    <!--Question card-->
-    <div id="question-card" class="container hidden">
-        <p>QUESTION <span id="question-number">1</span></p>
-        <h2 id="question">Question 1</h2>
-        <div id="answer-container">
-            <input type="radio" id="yes" name="answer" value="yes" class="radio-btn" data-number="10">
-            <label for="yes">Yes</label><br>
-            <input type="radio" id="sometimes" name="answer" value="sometimes" class="radio-btn" data-number="5">
-            <label for="sometimes">Sometimes</label><br>
-            <input type="radio" id="no" name="answer" value="no" class="radio-btn" data-number="1">
-            <label for="no">No</label>
+        <!--Name input box-->
+        <div id="name-box" class="container">
+            <form action="#">
+                <label for="name">Please tell us your name to continue</label>
+                <input type="text" id="name-input" maxlength="15">
+                <button type="submit" id="intro-next" class="control-btn">Next</button>
+            </form>
         </div>
-        <div id="display-validation"></div>
-        <button type="submit" class="control-btn" id="next-question">Next question</button>
-    </div>
-
-    <!--Results cards -->
-    <div id="results-card" class="container hidden">
-        <h2>Thanks for answering all questions!</h2>
-        <p>Based on your answers you are <span id="character-name"></span></p>
-        <div id="character-card">
-            <div id="character-img"></div>
-            <div id="character-description"></div>
+        <!--Age input box-->
+        <div id="age-box" class="container hidden">
+            <form action="#">
+                <label id="age-label" for="age">Please tell us your age</label>
+                <input type="text" id="age-input">
+                <button type="submit" class="control-btn" id="start-quiz">Start quiz</button>
+            </form>
         </div>
-        <button class="control-btn">Finish</button>
-    </div>
-</main>
-<footer>
-    
-</footer>
+
+        <!--Question card-->
+        <div id="question-card" class="container hidden">
+            <p>QUESTION <span id="question-number">1</span></p>
+            <h2 id="question">Question 1</h2>
+            <div id="answer-container">
+                <input type="radio" id="yes" name="answer" value="yes" class="radio-btn" data-number="10">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="sometimes" name="answer" value="sometimes" class="radio-btn" data-number="5">
+                <label for="sometimes">Sometimes</label><br>
+                <input type="radio" id="no" name="answer" value="no" class="radio-btn" data-number="1">
+                <label for="no">No</label>
+            </div>
+            <div id="display-validation"></div>
+            <button type="submit" class="control-btn" id="next-question">Next question</button>
+        </div>
+
+        <!--Results cards -->
+        <div id="results-card" class="container hidden">
+            <h2>Thanks for answering all questions!</h2>
+            <p>Based on your answers you are <span id="character-name"></span></p>
+            <div id="character-card">
+                <div id="character-img"></div>
+                <div id="character-description"></div>
+            </div>
+            <button class="control-btn">Finish</button>
+        </div>
+    </main>
+    <footer>
+        <p>Built for educational purposes, more details at Github
+            <a href="https://github.com/AgaToma" target="_blank" rel="noopener"
+                aria-label="Github (Opens in a new tab)">
+                <i class="fab fa-github"></i>
+            </a>
+        </p>
+    </footer>
+    <!--font awesome link for icons-->
+    <script src="https://kit.fontawesome.com/d0faf7c48b.js" crossorigin="anonymous"></script>
+    <!--Link to Javascript file-->
     <script src="assets/js/quiz.js"></script>
 </body>
 
