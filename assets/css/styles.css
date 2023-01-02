@@ -96,7 +96,7 @@ h1 {
     font-size: 1.25rem;
 }
 
-#age-input, #name-input:hover {
+#age-input:hover, #name-input:hover {
     box-shadow: 1px 1px 15px 10px rgba(86, 185, 235, 0.5);
     transform: translateY(-0.1rem);
     cursor: pointer;
@@ -124,7 +124,6 @@ h1 {
 .choice-container:hover {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-0.1rem);
-    cursor: grab;
 }
 
 
