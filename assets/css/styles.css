@@ -80,6 +80,29 @@ h1 {
     text-align: center;
 }
 
+#question-card {
+    width: 80%;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 1rem;
+    /*background-color: rgba(27, 25, 27, 0.6);*/
+    font-size: 2rem;
+    color:rgb(245, 245, 245);
+    line-height: 3rem;
+}
+
+#question-card div {
+    background-color: rgba(27, 25, 27, 0.6);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+
+
+
+
 /* The Close Button */
 .close-modal {
     color: #aaa;
