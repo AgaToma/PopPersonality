@@ -71,9 +71,7 @@ function validateAgeInput() {
         startQuizButton.disabled = true;
         userAge.addEventListener("input", function enableButton (){
             startQuizButton.disabled = false;
-        })}else {
-            startQuizButton.addEventListener("click", startQuiz);
-        }
+        })} else {startQuiz();}
 };
 
 
