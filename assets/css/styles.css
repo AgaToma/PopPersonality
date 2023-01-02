@@ -232,3 +232,7 @@ footer {
     color: rgb(245, 245, 245);
     line-height: 3rem;
 }
+
+.char-img {
+    height: 30rem;
+}

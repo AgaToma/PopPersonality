@@ -249,14 +249,14 @@ function getResults() {
         charName.innerText = `${availableResults[0].name}`;
         charCard.innerHTML = `
         <div id="character-card">
-            <div id="character-img"><img src=${availableResults[0].photo}></div>
+            <div id="character-img"><img src=${availableResults[0].photo} class="char-img"></div>
             <div id="character-description">${availableResults[0].description}</div>
         </div>`
     } else if (score > 15 && score <= 50) {
         charName.innerText = `${availableResults[1].name}`;
         charCard.innerHTML = `
         <div id="character-card">
-            <div id="character-img"><img src=${availableResults[1].photo}></div>
+            <div id="character-img"><img src=${availableResults[1].photo} class="char-img"></div>
             <div id="character-description">${availableResults[1].description}</div>
         </div>`
 
@@ -264,7 +264,7 @@ function getResults() {
         charName.innerText = `${availableResults[2].name}`;
         charCard.innerHTML = `
         <div id="character-card">
-            <div id="character-img"><img src=${availableResults[2].photo}></div>
+            <div id="character-img"><img src=${availableResults[2].photo} class="char-img"></div>
             <div id="character-description">${availableResults[2].description}</div>
         </div>`
 
@@ -272,7 +272,7 @@ function getResults() {
         charName.innerText = `${availableResults[3].name}`;
         charCard.innerHTML = `
         <div id="character-card">
-            <div id="character-img"><img src=${availableResults[3].photo}></div>
+            <div id="character-img"><img src=${availableResults[3].photo} class="char-img"></div>
             <div id="character-description">${availableResults[3].description}</div>
         </div>`
 

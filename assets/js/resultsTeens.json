@@ -17,7 +17,7 @@
 {
     "name": "Luke Skywalker",
     "story": "Star Wars",
-    "description": "The force is strong with him",
+    "description": "The force is strong with you",
     "scoreId": "4",
     "score": "50 - 75",
     "photo": "../assets/images/luke.webp"
