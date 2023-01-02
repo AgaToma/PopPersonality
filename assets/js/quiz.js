@@ -211,7 +211,7 @@ function getNextQuestion() {
         i.addEventListener("click", (event) => {
             if (event.target.checked) {
                 nextQuestionButton.disabled = false;
-                document.getElementById("display-validation").innerText = "";
+                document.getElementById("display-validation").style.display = "none";
 
             }
         })
