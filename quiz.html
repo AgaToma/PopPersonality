@@ -40,17 +40,24 @@
 
         <!--Question card-->
         <div id="question-card" class="hidden">
-            <div>
-            <p>QUESTION <span id="question-number">1</span></p>
-            <h2 id="question">Question 1</h2>
+            <div id="question-box">
+                <p>QUESTION <span id="question-number">1</span></p>
+                <h2 id="question">Question 1</h2>
             </div>
-            <div id="answer-container">
-                <input type="radio" id="yes" name="answer" value="yes" class="radio-btn" data-number="10">
-                <label for="yes">Yes</label><br>
-                <input type="radio" id="sometimes" name="answer" value="sometimes" class="radio-btn" data-number="5">
-                <label for="sometimes">Sometimes</label><br>
-                <input type="radio" id="no" name="answer" value="no" class="radio-btn" data-number="1">
-                <label for="no">No</label>
+            <div id="answer-box">
+                <div class="choice-container">
+                    <input type="radio" id="yes" name="answer" value="yes" class="radio-btn" data-number="10">
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="choice-container">
+                    <input type="radio" id="sometimes" name="answer" value="sometimes" class="radio-btn"
+                        data-number="5">
+                    <label for="sometimes">Sometimes</label>
+                </div>
+                <div class="choice-container">
+                    <input type="radio" id="no" name="answer" value="no" class="radio-btn" data-number="1">
+                    <label for="no">No</label>
+                </div>
             </div>
             <div id="display-validation">Please select an answer to continue</div>
             <button type="submit" class="control-btn" id="next-question">Next question</button>
