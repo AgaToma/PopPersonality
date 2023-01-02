@@ -13,12 +13,16 @@ rulesClose.addEventListener("click", closeRulesModal);
 */
 function openRulesModal () {
     rulesModal.style.display = "block";
+    document.getElementById("description-box").style.display = "none";
+    document.getElementById("rules-btn-container").style.display = "none";
 }
 
 /** 
  * Closes rules modal when user clicks x
 */
 function closeRulesModal () {
-    rulesModal.style.display = "none"
+    rulesModal.style.display = "none";
+    document.getElementById("description-box").style.display = "block";
+    document.getElementById("rules-btn-container").style.display = "block";
 }
 
