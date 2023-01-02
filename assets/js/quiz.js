@@ -67,14 +67,13 @@ function showAgeBox() {
 
 function validateAgeInput() {
 
-    if (userAge.value === "" || isNaN(userAge.value)) {
+     if (userAge.value === "") {
         startQuizButton.disabled = true;
         userAge.addEventListener("input", function enableButton (){
             startQuizButton.disabled = false;
+        })}else {
             startQuizButton.addEventListener("click", startQuiz);
-        })
-
-}
+        }
 };
 
 
