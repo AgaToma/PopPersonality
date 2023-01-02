@@ -181,6 +181,7 @@ function getNextQuestion() {
     if (questionCounter >= maxQuestionCount) {
 
         questionCard.style.display = "none";
+        document.getElementById("quiz-area").style.backgroundColor = "transparent";
         resultsCard.style.display = "block";
         getResults();
 
