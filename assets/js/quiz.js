@@ -218,6 +218,12 @@ function getNextQuestion() {
             }
         })
     }
+/**
+ * changes the button on last question to suggest getting results
+ */
+    if (questionCounter === maxQuestionCount) {
+        nextQuestionButton.innerText = "Submit and get results";
+    }
 };
 
 
