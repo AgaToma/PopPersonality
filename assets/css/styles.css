@@ -37,8 +37,24 @@ a {
     text-shadow: 1px 1px 15px rgb(245, 245, 245);
 }
 
+a:hover {
+    text-shadow: 5px 5px 25px rgb(245, 245, 245);
+}
+
 .pink {
     color: lightpink;
+}
+
+a h1:hover {
+    font-size: 4.5rem;
+}
+
+.white {
+    color:rgb(245, 245, 245);
+}
+
+.white:hover {
+    box-shadow: 1px 1px 15px 10px rgba(86, 185, 235, 0.5);
 }
 
 h1 {
