@@ -11,7 +11,7 @@
         "story": "Frozen",
         "description": "Smart & kind with icy superpowers",
         "scoreId": "2",
-        "score": "25 - 50",
+        "score": "26 - 50",
         "photo": "../assets/images/elsa.webp"
     },
     {
@@ -19,7 +19,7 @@
         "story": "Lion Guard",
         "description": "Full of energy and fun ideas",
         "scoreId": "4",
-        "score": "50 - 75",
+        "score": "51 - 75",
         "photo": "../assets/images/kion.webp"
     },
     {
@@ -27,7 +27,7 @@
         "story": "Minions",
         "description": "Loyal and resourceful",
         "scoreId": "3",
-        "score": "75 - 100",
+        "score": "76 - 100",
         "photo": "../assets/images/kevin.webp"
     }
 ]

@@ -11,7 +11,7 @@
     "story": "The Witcher",
     "description": "Strong and resilient, broods too much",
     "scoreId": "2",
-    "score": "25 - 50",
+    "score": "26 - 50",
     "photo": "../assets/images/geralt.webp"
 },
 {
@@ -19,7 +19,7 @@
     "story": "Vikings",
     "description": "Powerful and kind, excels both as a nurturer and a warrior",
     "scoreId": "4",
-    "score": "50 - 75",
+    "score": "51 - 75",
     "photo": "../assets/images/lagertha.webp"
 },
 {
@@ -27,7 +27,7 @@
     "story": "Rogue One",
     "description": "Determined, with great sense of responsibility, thinks outside the box",
     "scoreId": "3",
-    "score": "75 - 100",
+    "score": "76 - 100",
     "photo": "../assets/images/jynerso.webp"
 }
 ]

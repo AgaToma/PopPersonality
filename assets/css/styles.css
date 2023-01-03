@@ -80,7 +80,7 @@ h1 {
     text-align: center;
 }
 
-#start-btn {
+.redirect-btn {
     color: black;
     padding: 0.5rem 1rem;
     text-decoration: none;
@@ -94,7 +94,7 @@ h1 {
     font-weight: bold;
 }
 
-#start-btn:hover {
+.redirect-btn:hover {
     border-color: black;
     box-shadow: 1px 1px 15px 10px rgba(86, 185, 235, 0.5);
 }
