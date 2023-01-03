@@ -173,6 +173,15 @@ function getNextQuestion() {
         0
     );
     console.log(score);
+    
+    /**
+     * resets the chosen answer from previous question 
+     */
+    for (let i of radios) {
+        nextQuestionButton.addEventListener("click", () => {
+            i.checked = false;
+            });
+    }
 
 
     if (questionCounter >= maxQuestionCount) {
@@ -226,7 +235,6 @@ choices.forEach((choice) => {
         loopCounter++;
         selectedChoice = event.target;
         selectedAnswer = selectedChoice.dataset['number'];
-
     });
 });
 
