@@ -64,6 +64,14 @@ h1 {
     font-weight: bold;
 }
 
+.grab:hover {
+    cursor: grab;
+}
+
+.radio-btn:hover {
+    cursor: grab;
+}
+
 
 .container {
     width: 80%;
