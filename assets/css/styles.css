@@ -260,3 +260,35 @@ footer {
 .char-img {
     height: 30rem;
 }
+
+/*Viewport size below 1300px*/
+@media screen and (max-width: 1300px) {
+    #quiz-area, #intro-area {
+    background-color: transparent;
+    }
+
+}
+
+@media screen and (max-width: 1040px) {
+    
+    body {
+        justify-content: flex-start; 
+    }
+    
+    #quiz-area, #intro-area {
+        background-color: transparent;
+        width: 90vw;
+        }
+}
+
+@media screen and (max-width: 930px) {
+    #title-box {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    
+    #quiz-area, #intro-area {
+        background-color: transparent;
+        width: 100vw;
+        }
+}
