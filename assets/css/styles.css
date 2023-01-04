@@ -295,7 +295,29 @@ footer {
         background-color: transparent;
         width: 100vw;
     }
+
+    .container {
+        font-size: 1.3rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        line-height: 1.5rem;
+    }
+
+    #results-card {
+        height: 60vh;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    
+    }
+
+    .char-img {
+        height: 25rem;
+    }
 }
+
 
 @media screen and (min-width: 320px) and (max-width: 620px) {
     #title-box {
@@ -314,6 +336,11 @@ footer {
         padding: 1rem;
         margin: 0.4rem;
         line-height: 1.5rem;
+    }
+
+    .container h3 {
+        font-size: 1.2rem;
+        font-weight: 300;
     }
 
     #open-modal {
@@ -337,7 +364,7 @@ footer {
     }
     #question-card {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin: 1rem;
         line-height: 1.6rem;
     }
@@ -350,4 +377,19 @@ footer {
         font-size: 1.2rem;
     }
     
+    #results-card {
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        height: auto;
+        padding: 0;
+    }
+
+    #character-card {
+        padding-bottom: 0.5rem;
+    }
+
+    .char-img {
+        height: 20rem;
+        margin: 0.5rem;
+    }
 }
