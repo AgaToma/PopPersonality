@@ -431,14 +431,21 @@ footer {
         font-size: 1.2rem;
         height: auto;
         padding: 0;
+        width: fit-content;
     }
 
     #character-card {
         padding-bottom: 0.5rem;
+        height: 70%;
     }
 
     .char-img {
         height: 20rem;
         margin: 0.5rem;
+    }
+
+    #last-btn {
+        position: fixed;
+
     }
 }
