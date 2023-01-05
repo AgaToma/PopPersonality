@@ -49,7 +49,7 @@ function showAgeBox() {
         introNextButton.disabled = true;
         userName.addEventListener("input", function enableButton (){
             introNextButton.disabled = false;
-        })
+        };)
     } else {
         nameBox.style.display = "none";
         ageBox.style.display = "block";
@@ -57,9 +57,9 @@ function showAgeBox() {
         document.getElementById("age-label").innerHTML = `
     <label id="age-label" for="age">${userName.value}, you are nearly set. Please enter you age to continue, so we can assign you to the correct group
     </label>
-    `
+    `;
     }
-};
+}
 
 /** 
  * validates age input presence and if number format
@@ -71,8 +71,8 @@ function validateAgeInput() {
         startQuizButton.disabled = true;
         userAge.addEventListener("input", function enableButton (){
             startQuizButton.disabled = false;
-        })} else {startQuiz();}
-};
+        });} else {startQuiz();}
+}
 
 
 
@@ -146,7 +146,7 @@ nextQuestionButton.addEventListener("click", getNextQuestion);
 function startQuiz() {
     score = 0;
     questionCounter = 0;
-    ageBox.style.display = "none"
+    ageBox.style.display = "none";
     questionCard.style.display = "block";
 
     if (userAge.value < 18) {
@@ -156,7 +156,7 @@ function startQuiz() {
     }
 
     getNextQuestion();
-};
+}
 
 /**
  * increments question counter, selects next random question out of available array and takes it out to avoid repetition
@@ -203,7 +203,7 @@ function getNextQuestion() {
 
         nextQuestionButton.disabled = true;
         document.getElementById("display-validation").innerText = "Please select an answer";
-    };
+    }
 
     /**
      * validates if user selected answer and removes disabled from the next question button
@@ -216,7 +216,7 @@ function getNextQuestion() {
                 document.getElementById("display-validation").style.display = "none";
 
             }
-        })
+        });
     }
 /**
  * changes the button on last question to suggest getting results
@@ -224,7 +224,7 @@ function getNextQuestion() {
     if (questionCounter === maxQuestionCount) {
         nextQuestionButton.innerText = "Submit and get results";
     }
-};
+}
 
 
 /**
@@ -260,14 +260,14 @@ function getResults() {
         <div id="character-card">
             <div id="character-img"><img src=${availableResults[0].photo} class="char-img"></div>
             <div id="character-description">${availableResults[0].description}</div>
-        </div>`
+        </div>`;
     } else if (score > 15 && score <= 50) {
         charName.innerText = `${availableResults[1].name}`;
         charCard.innerHTML = `
         <div id="character-card">
             <div id="character-img"><img src=${availableResults[1].photo} class="char-img"></div>
             <div id="character-description">${availableResults[1].description}</div>
-        </div>`
+        </div>`;
 
     } else if (score > 50 && score <= 75) {
         charName.innerText = `${availableResults[2].name}`;
@@ -275,7 +275,7 @@ function getResults() {
         <div id="character-card">
             <div id="character-img"><img src=${availableResults[2].photo} class="char-img"></div>
             <div id="character-description">${availableResults[2].description}</div>
-        </div>`
+        </div>`;
 
     } else if (score > 75) {
         charName.innerText = `${availableResults[3].name}`;
@@ -283,9 +283,9 @@ function getResults() {
         <div id="character-card">
             <div id="character-img"><img src=${availableResults[3].photo} class="char-img"></div>
             <div id="character-description">${availableResults[3].description}</div>
-        </div>`
+        </div>`;
 
     } else {
         console.log("error");
     }
-};
+}
