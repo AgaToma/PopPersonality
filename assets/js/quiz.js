@@ -49,7 +49,7 @@ function showAgeBox() {
         introNextButton.disabled = true;
         userName.addEventListener("input", function enableButton (){
             introNextButton.disabled = false;
-        };)
+        });
     } else {
         nameBox.style.display = "none";
         ageBox.style.display = "block";
