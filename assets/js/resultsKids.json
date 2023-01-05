@@ -4,7 +4,7 @@
         "description": "Mischevious ghost",
         "scoreId": "1",
         "score": "10 - 25",
-        "photo": "../assets/images/chaorion.webp"
+        "photo": "./assets/images/chaorion.webp"
     },
     {
         "name": "Elsa",
@@ -12,7 +12,7 @@
         "description": "Smart & kind with icy superpowers",
         "scoreId": "2",
         "score": "26 - 50",
-        "photo": "../assets/images/elsa.webp"
+        "photo": "./assets/images/elsa.webp"
     },
     {
         "name": "Kion",
@@ -20,7 +20,7 @@
         "description": "Full of energy and fun ideas",
         "scoreId": "4",
         "score": "51 - 75",
-        "photo": "../assets/images/kion.webp"
+        "photo": "./assets/images/kion.webp"
     },
     {
         "name": "Kevin the Minion",
@@ -28,6 +28,6 @@
         "description": "Loyal and resourceful",
         "scoreId": "3",
         "score": "76 - 100",
-        "photo": "../assets/images/kevin.webp"
+        "photo": "./assets/images/kevin.webp"
     }
 ]
