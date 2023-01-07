@@ -438,7 +438,7 @@ footer {
     #results-card {
         line-height: 1.5rem;
         font-size: 1.2rem;
-        height: auto;
+        height: 80vh;
         padding: 0;
         width: fit-content;
     }
