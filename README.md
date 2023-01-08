@@ -41,6 +41,7 @@ User needs to provide their age to be assigned to one of 3 age groups - kids, te
 <li>Times</li>
 Default browser Times font was kept and used as a base to style the logo (see above)
 </ul>
+
 <h2>Colors</h2>
 Background photo of a person partly covered with colourful powder/mist on a black background was used as an inspiration for the color palette
 To ensure proper contrast text boxes were also given dark background with a level of opacity applied
@@ -71,7 +72,7 @@ Logo made of pink Times font letters with a whitish hue is present on all pages/
 
 <h3>Footer<h3>
 
-Footer includes a short description of the site's purpose and a link to the author's Github profile. 
+Footer includes a short description of the site's purpose and a link to the author's Github profile.<br>
 ![Footer](docs/readme-images/footer.JPG)
 
 <h3>404 page<h3>
@@ -87,7 +88,7 @@ This section has a short introduction to the quiz, explaining what it is and dir
 
 <h3>Rules modal</h3>
 
-User can access the Rules modal by clicking Rules button under description.
+User can access the Rules modal by clicking Rules button under description.<br>
 ![Rules-btn](docs/readme-images/rules-button.JPG)
 
 The modal format to contain rules details was used to save space on the home page and to provide a user controlled experience. User can close the modal by clicking "x" in the top right corner of the modal.
@@ -95,7 +96,7 @@ The modal format to contain rules details was used to save space on the home pag
 
 <h3>Go to quiz</h3>
 
-To proceed to the quiz page, user clicks the Go to quiz button.
+To proceed to the quiz page, user clicks the Go to quiz button.<br>
 ![Quiz intro btn](docs/readme-images/quiz-intro-btn.JPG)
 
 <h2>Quiz page</h2>
