@@ -21,8 +21,41 @@ User needs to provide their age to be assigned to one of 3 age groups - kids, te
 <h1>Design</h1>
 <h2>Sketches</h2>
 <h2>Fonts<h2>
+<ul>
+<li>Josefin Sans
+<p>Used for all content except logo </p>
+<ul>
+<li>300</li>
+
+![300](docs/readme-images/font300.JPG)
+
+<li>400</li>
+
+![400](docs/readme-images/font400.JPG)
+
+<li>Bold</li>
+
+![Bold](docs/readme-images/fontbold.JPG)
+</ul>
+</li>
+<li>Times</li>
+Default browser Times font was kept and used as a base to style the logo (see above)
+</ul>
 <h2>Colors<h2>
+<p>Background photo of a person partly covered with colourful powder/mist on a black background was used as an inspiration for the color palette</p>
+<p>To ensure proper contrast text boxes were also given dark background with a level of opacity applied</p>
+<p>For correct contrast, content font is white with the exception of styled logo, which is pink</p>
 <h2>Quiz flow</h2>
+<ul>
+<li>Greeting screen with invitation to quiz</li>
+<li>User can read rules by pressing and popping out Rules modal</li>
+<li>User presses Go to quiz to start - User asked for name - name input with empty validation - User addressed by name and asked for age - age input with empty/number validation 
+<li>On start quiz user assigned to relevant age group for question selection</li>
+<li>10 Questions are selected randomly for user out of 20 available (kids & teens same sets of questions)</li>
+<li>User answers question - selects yes, no, sometimes on radio buttons - set score for each selection is captured</li>
+<li>User completes all 10 questions - after 10th question submission score is calculated (total of captured individual values)</li>
+<li>Based on score results card is displayed (4 characters for each of 3 groups, each characted has a score value range)</li>
+</ul>
 <h1>Features</h1>
 <h2>Site wide<h2>
 <h3>Favicon<h3>
