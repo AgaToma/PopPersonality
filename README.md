@@ -157,7 +157,43 @@ JPG format gallery photos were converted to webp using https://convertio.co/jpg-
 </ul>
 <h1>Testing<h1>
 <h2>Accessibility</h2>
+Care was taken to ensure sufficient level of accessibility and user friendliness by using semantic HTML elements, aria-labels, appropriate color contrast, different hover and active states, sans serif font. Accessibility was tested during the project creating as well as upon completion with [Wave](https://wave.webaim.org/) - Web Accessibility Evaluation Tool. No errors were detected.
+
+![Accessibility index](docs/testing-images/access-index.JPG)
+![Accessibility quiz](docs/testing-images/access-quiz.JPG)
+
+<h2>Lighthouse</h2>
+
+![Lighthouse desktop](docs/testing-images/lighthouse-desktop.JPG)
+![Lighthouse mobile](docs/testing-images/lighthouse-mobile.JPG)
+
 <h2>Validator testing</h2>
+
+<h3>HTML</h3>
+
+Website was tested with [W3C validator](https://validator.w3.org/). 
+
+<h4>Error and fix</h4>
+While still during creation an error was returned for one of the elements (Go to quiz button on index.html) highlighting that anchor tag cannot be wrapped in a button. In order to comply with HTML best practice button tags were removed and anchor element was styled instead with CSS to achieve desired button appearance. Validation of the completed project returned no errors.
+
+<h4>Final results</h4>
+
+![HTML validator index](docs/testing-images/html-validation-index.JPG)
+![HTML validator quiz](docs/testing-images/html-validation-quiz.JPG)
+
+<h3>CSS</h3>
+
+Website was tested with [W3C jigsaw validator](https://jigsaw.w3.org/css-validator/). No errors were returned.
+
+![CSS validator](docs/testing-images/css-validation.JPG)
+
+<h3>JavaScript</h3>
+
+Website was tested with [JS Hint](https://jshint.com/) during creation and also after completion. No errors were returned, however during creation the hints proved useful to solve minor logic inaccuracies (variable scope) and semicolons being present in the right places.
+
+![JS Hint index](docs/testing-images/jshint-index.JPG)
+![JS Hint quiz](docs/testing-images/jshint-quiz.JPG)
+
 <h2>Functional testing</h2>
 Add Google sheet
 <h2>Responsiveness</h2>
@@ -183,5 +219,22 @@ GitHub repository can be found [here](https://github.com/AgaToma/PopPersonality)
 <h2>References</h2>
 <h2>Acknowledgements</h2>
 <h2>Images</h2>
+
+[Elsa] (https://wallpapers.com/images/high/elsa-walking-frozen-2-kkkamcsuf192gqow.webp)
+[Chaorion] (https://ghostforce.fandom.com/wiki/Chaorion?file=Chaorion+basic+form.png)
+[Kion] (https://disney.fandom.com/wiki/Kion?file=Profile_-_Kion_S3.png)
+[Kevin] (https://despicableme.fandom.com/wiki/Kevin_(Despicable_Me_2)?file=Tall.jpg)
+[Eleven] (https://strangerthings.fandom.com/wiki/Eleven?file=Eleven+-+The+Piggyback.png)
+[Enid] (https://addamsfamily.fandom.com/wiki/Enid_Sinclair?file=EnidSinclairN.webp)
+[Jack] (https://great-characters.fandom.com/wiki/Captain_Jack_Sparrow?file=Jacksparrow.jpeg)
+[Luke] (https://headhuntersholosuite.fandom.com/wiki/Luke_Skywalker?file=Luke_Skywalker_001.jpg)
+[Jon] (https://ultimatepopculture.fandom.com/wiki/Jon_Snow?file=Jon_Snow-Kit_Harington.jpg)
+[Geralt] (https://witcher.fandom.com/wiki/Geralt_of_Rivia?file=Netflix+geralt+shirt.jpg)
+[Lag] (https://vikings.fandom.com/de/wiki/Lagertha)
+[Jyn] (https://rogue-one.fandom.com/wiki/Jyn_Erso?file=JynErsoScarif.jpg)
+[Background] (https://unsplash.com/photos/YCF34YywBrs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) - author - David Becker (Unsplash)
+
 <h2>Content</h2>
+Content of the website is fictional and was created for educational purposes of building the website by it's author (Aga Tomaszewska). It is not based on any psychological or personality research, results are generated mathematically based on random score question.
+
 <h2>Copyright disclaimer?</h2>
