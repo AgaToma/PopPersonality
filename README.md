@@ -42,9 +42,9 @@ User needs to provide their age to be assigned to one of 3 age groups - kids, te
 Default browser Times font was kept and used as a base to style the logo (see above)
 </ul>
 <h2>Colors<h2>
-<p>Background photo of a person partly covered with colourful powder/mist on a black background was used as an inspiration for the color palette</p>
-<p>To ensure proper contrast text boxes were also given dark background with a level of opacity applied</p>
-<p>For correct contrast, content font is white with the exception of styled logo, which is pink</p>
+Background photo of a person partly covered with colourful powder/mist on a black background was used as an inspiration for the color palette
+To ensure proper contrast text boxes were also given dark background with a level of opacity applied
+For correct contrast, content font is white with the exception of styled logo, which is pink
 <h2>Quiz flow</h2>
 <ul>
 <li>Greeting screen with invitation to quiz</li>
