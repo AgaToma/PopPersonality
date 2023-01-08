@@ -220,19 +220,21 @@ GitHub repository can be found [here](https://github.com/AgaToma/PopPersonality)
 <h2>Acknowledgements</h2>
 <h2>Images</h2>
 
-[Elsa] (https://wallpapers.com/images/high/elsa-walking-frozen-2-kkkamcsuf192gqow.webp)
-[Chaorion] (https://ghostforce.fandom.com/wiki/Chaorion?file=Chaorion+basic+form.png)
-[Kion] (https://disney.fandom.com/wiki/Kion?file=Profile_-_Kion_S3.png)
-[Kevin] (https://despicableme.fandom.com/wiki/Kevin_(Despicable_Me_2)?file=Tall.jpg)
-[Eleven] (https://strangerthings.fandom.com/wiki/Eleven?file=Eleven+-+The+Piggyback.png)
-[Enid] (https://addamsfamily.fandom.com/wiki/Enid_Sinclair?file=EnidSinclairN.webp)
-[Jack] (https://great-characters.fandom.com/wiki/Captain_Jack_Sparrow?file=Jacksparrow.jpeg)
-[Luke] (https://headhuntersholosuite.fandom.com/wiki/Luke_Skywalker?file=Luke_Skywalker_001.jpg)
-[Jon] (https://ultimatepopculture.fandom.com/wiki/Jon_Snow?file=Jon_Snow-Kit_Harington.jpg)
-[Geralt] (https://witcher.fandom.com/wiki/Geralt_of_Rivia?file=Netflix+geralt+shirt.jpg)
-[Lag] (https://vikings.fandom.com/de/wiki/Lagertha)
-[Jyn] (https://rogue-one.fandom.com/wiki/Jyn_Erso?file=JynErsoScarif.jpg)
-[Background] (https://unsplash.com/photos/YCF34YywBrs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) - author - David Becker (Unsplash)
+Character images were taken from fandom wikis. Background image is a free to use photo from Unsplash.
+
+[Elsa](https://wallpapers.com/images/high/elsa-walking-frozen-2-kkkamcsuf192gqow.webp)<br>
+[Chaorion](https://ghostforce.fandom.com/wiki/Chaorion?file=Chaorion+basic+form.png)<br>
+[Kion](https://disney.fandom.com/wiki/Kion?file=Profile_-_Kion_S3.png)<br>
+[Kevin](https://despicableme.fandom.com/wiki/Kevin_(Despicable_Me_2)?file=Tall.jpg)<br>
+[Eleven](https://strangerthings.fandom.com/wiki/Eleven?file=Eleven+-+The+Piggyback.png)<br>
+[Enid](https://addamsfamily.fandom.com/wiki/Enid_Sinclair?file=EnidSinclairN.webp)<br>
+[Jack](https://great-characters.fandom.com/wiki/Captain_Jack_Sparrow?file=Jacksparrow.jpeg)<br>
+[Luke](https://headhuntersholosuite.fandom.com/wiki/Luke_Skywalker?file=Luke_Skywalker_001.jpg)<br>
+[Jon](https://ultimatepopculture.fandom.com/wiki/Jon_Snow?file=Jon_Snow-Kit_Harington.jpg)<br>
+[Geralt](https://witcher.fandom.com/wiki/Geralt_of_Rivia?file=Netflix+geralt+shirt.jpg)<br>
+[Lag](https://vikings.fandom.com/de/wiki/Lagertha)<br>
+[Jyn](https://rogue-one.fandom.com/wiki/Jyn_Erso?file=JynErsoScarif.jpg)<br>
+[Background](https://unsplash.com/photos/YCF34YywBrs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) - author - David Becker (Unsplash)
 
 <h2>Content</h2>
 Content of the website is fictional and was created for educational purposes of building the website by it's author (Aga Tomaszewska). It is not based on any psychological or personality research, results are generated mathematically based on random score question.
