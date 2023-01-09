@@ -195,7 +195,11 @@ Website was tested with [JS Hint](https://jshint.com/) during creation and also 
 ![JS Hint quiz](docs/testing-images/jshint-quiz.JPG)
 
 <h2>Functional testing</h2>
-Add Google sheet
+
+![Testing capture](add capture)
+
+[Document can be viewed here](https://docs.google.com/spreadsheets/d/1OmoTnrLqkl4eOBPQx-ZzcdWkGLoL6733fwl_z3dp3n0/edit?usp=sharing)
+
 <h2>Responsiveness</h2>
 <h2>Bugs & fix summary?</h2>
 <h1>Deployment</h1>
