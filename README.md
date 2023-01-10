@@ -195,13 +195,53 @@ Website was tested with [JS Hint](https://jshint.com/) during creation and also 
 ![JS Hint quiz](docs/testing-images/jshint-quiz.JPG)
 
 <h2>Functional testing</h2>
+<h3>Testing of completed project</h3>
 
-![Testing capture](add capture)
+![Testing capture](docs/testing-images/functional-testing.JPG)
 
 [Document can be viewed here](https://docs.google.com/spreadsheets/d/1OmoTnrLqkl4eOBPQx-ZzcdWkGLoL6733fwl_z3dp3n0/edit?usp=sharing)
 
+<h3>Functional testing during project creation - main bugs and fix summary</h3>
+<ol>
+<li>Problem: startQuizButton only working when agebox is empty first, button disabled, box filled out, button enabled, working then
+<ul>
+<li>Fix a: added else statement with event listener on startQuizButton, but in this scenarion button had to be clicked twice to load quiz </li>
+<li>Fix b: Removed event listener in the else statement and left startQuiz function only</li>
+</ul>
+</li>
+<li>Problem: nameBox loads twice every now and again (each 4 - 6 submissions)
+<ul>
+<li>Fix: Removed form tags that were wrapped around nameBox and ageBox content</li>
+</ul>
+</li>
+<li>Problem: HTML form contol (required attribute) would not work on hidden elements
+<ul>
+<li>Fix: Introduced input validation via JS instead</li>
+</ul>
+</li>
+<li>Problem: Console showing warning failed to load source map
+<ul>
+<li>Fix: in Settings unticked "Enable JavaScript source maps"</li>
+</ul>
+</li>
+<li>Problem: Images not showing after deployment
+<ul>
+<li>Fix: Removed "assets" from path - still not working with "../images/title, changed to one dot path based on the advice here
+https://github.com/orgs/community/discussions/23086</li>
+</ul>
+</li>
+<li>Problem: target area allowing to make selection on the answer was limited to the actual radio and label text displayed, test users reported this as too much of an inconvenience
+<ul>
+<li>Fix: changed label and input tags order based on the advice here https://stackoverflow.com/questions/7727255/how-can-i-make-an-html-radiobutton-with-a-big-target-area</li>
+</ul>
+</li>
+</ol>
+
 <h2>Responsiveness</h2>
-<h2>Bugs & fix summary?</h2>
+
+Responsive fixes for mobiles (Filip) and laptops - Results card
+Fix: add wrap feature for description text on results card
+Finish button pushed too high on the results card content (small screens) - adjusted height to fix
 <h1>Deployment</h1>
 <h2>Version Control</h2>
 Site was created and developed with GitHub using Gitpod in Chrome. The following commands were used for version control.
