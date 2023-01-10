@@ -261,6 +261,27 @@ GitHub repository can be found [here](https://github.com/AgaToma/PopPersonality)
 <h2>Forking & Cloning</h2>
 <h1>Credits</h1>
 <h2>References</h2>
+Used the below resources for reference and help.
+
+[Build a quiz app with Javascript by WebDev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)<br>
+[Build a quiz app by James Q Quick - Fetch API to Load Local Questions](https://www.youtube.com/watch?v=jK5zzSA2JHI&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=12)<br>
+[Build a quiz app by James Q Quick - Display Hard Coded Question](https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=4)<br>
+
+https://github.com/kera-cudmore/TheQuizArms <br>
+https://github.com/MattBCoding/ufoduel <br>
+https://github.com/suzybee1987/milestone-2 <br>
+
+https://www.w3schools.com/jsref/prop_select_disabled.asp <br>
+https://www.w3schools.com/howto/howto_css_modals.asp <br>
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON <br>
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch <br>
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce <br>
+https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/?ref=rp <br>
+https://www.freecodecamp.org/news/html-button-link-code-examples-how-to-make-html-hyperlinks-using-the-href-attribute-on-tags/ <br>
+https://stackoverflow.com/questions/7727255/how-can-i-make-an-html-radiobutton-with-a-big-target-area <br>
+https://github.com/orgs/community/discussions/23086 
+
+
 <h2>Acknowledgements</h2>
 <h2>Images</h2>
 
