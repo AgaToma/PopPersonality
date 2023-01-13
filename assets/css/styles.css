@@ -318,11 +318,10 @@ footer {
         height: 82%;
     }
 
-    .char-img {
+    #character-img img {
         height: 20rem;
         padding: 0.2rem;
     }
-
 
 }
 
