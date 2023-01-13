@@ -22,8 +22,8 @@ User needs to provide their age to be assigned to one of 3 age groups - kids, te
 <h2>Sketches</h2>
 <h2>Fonts<h2>
 <ul>
-<li>Josefin Sans
-<p>Used for all content except logo</p>
+<li>Josefin Sans<br>
+Used for all content except logo
 <ul>
 <li>300</li>
 
@@ -38,8 +38,8 @@ User needs to provide their age to be assigned to one of 3 age groups - kids, te
 ![Bold](docs/readme-images/fontbold.JPG)
 </ul>
 </li>
-<li>Times</li>
-Default browser Times font was kept and used as a base to style the logo (see above)
+<li>Times<br>
+Default browser Times font was kept and used as a base to style the logo (see above)</li>
 </ul>
 
 <h2>Colors</h2>
