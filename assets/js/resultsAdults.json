@@ -4,7 +4,8 @@
     "description": "Man of principles, but knows nothing",
     "scoreId": "1",
     "score": "10 - 25",
-    "photo": "./assets/images/jon.webp"
+    "photo": "./assets/images/jon.webp",
+    "alt": "result image of Jon Snow from Game of Thrones"
 },
 {
     "name": "Geralt of Rivia",
@@ -12,7 +13,8 @@
     "description": "Strong and resilient, broods too much",
     "scoreId": "2",
     "score": "26 - 50",
-    "photo": "./assets/images/geralt.webp"
+    "photo": "./assets/images/geralt.webp",
+    "alt": "result image of Geralt the Witcher"
 },
 {
     "name": "Lagertha",
@@ -20,7 +22,8 @@
     "description": "Powerful and kind, excels both as a nurturer and a warrior",
     "scoreId": "4",
     "score": "51 - 75",
-    "photo": "./assets/images/lagertha.webp"
+    "photo": "./assets/images/lagertha.webp",
+    "alt": "result image of Lagertha from Vikings"
 },
 {
     "name": "Jyn Erso",
@@ -28,6 +31,7 @@
     "description": "Determined, with great sense of responsibility, thinks outside the box",
     "scoreId": "3",
     "score": "76 - 100",
-    "photo": "./assets/images/jynerso.webp"
+    "photo": "./assets/images/jynerso.webp",
+    "alt": "result image of Jyn Erso from Rogue One"
 }
 ]
