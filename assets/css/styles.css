@@ -162,18 +162,6 @@ h1 {
     box-shadow: 1px 1px 15px 10px rgba(86, 185, 235, 0.5);
 }
 
-
-#question-card {
-    width: 65%;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 5px;
-    margin: 1rem;
-    font-size: 2rem;
-    color: rgb(245, 245, 245);
-    line-height: 3rem;
-}
-
 #age-input,
 #name-input {
     line-height: 1.5rem;
@@ -186,6 +174,22 @@ h1 {
     box-shadow: 1px 1px 15px 10px rgba(86, 185, 235, 0.5);
     transform: translateY(-0.1rem);
     cursor: pointer;
+}
+
+#name-reminder {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#question-card {
+    width: 65%;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 1rem;
+    font-size: 2rem;
+    color: rgb(245, 245, 245);
+    line-height: 3rem;
 }
 
 

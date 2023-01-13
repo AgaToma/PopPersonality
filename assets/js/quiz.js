@@ -47,8 +47,10 @@ function showAgeBox() {
 
     if (userName.value === "") {
         introNextButton.disabled = true;
+        document.getElementById("name-reminder").style.display = "block";
         userName.addEventListener("input", function enableButton (){
             introNextButton.disabled = false;
+            document.getElementById("name-reminder").style.display = "none";
         });
     } else {
         nameBox.style.display = "none";
