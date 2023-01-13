@@ -276,6 +276,22 @@ footer {
     #quiz-area,
     #intro-area {
         background-color: transparent;
+        width: 95vw;
+    }
+
+    #title-box {
+        padding-top: 1rem;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0.5rem;
+        line-height: 2.5rem;
+        padding: 1.5rem;
+    }
+
+    footer {
+        bottom: 10px;
     }
 
 }
