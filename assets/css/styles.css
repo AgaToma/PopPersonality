@@ -205,6 +205,10 @@ h1 {
     font-size: 2.75rem;
 }
 
+fieldset {
+    border: none;
+}
+
 #answer-box {
     margin-bottom: 2rem;
 }
