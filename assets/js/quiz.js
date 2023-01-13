@@ -174,7 +174,7 @@ function getNextQuestion() {
         (accumulator, currentValue) => accumulator + currentValue,
         0
     );
-    console.log(score);
+
     
     /**
      * resets the chosen answer from previous question 
