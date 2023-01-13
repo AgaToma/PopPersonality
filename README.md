@@ -137,13 +137,21 @@ After user answers all 10 questions, the score is calculated as a total of each 
 <h1>Technologies</h1>
 <ul>
 <li>HTML</li>
+The structure of the website was developed using HTML as the main language.
 <li>CSS</li>
+The website was styled using custom CSS in an external file.
 <li>Javascript</li>
+The logic was built with plain Javascript stored in external files.
+<li>JSON and Fetch API</li>
+Questions and results are stored in object arrays in external JSON files with Fetch used to link and transfer with JS file. 
 <li>favicon.io</li>
+Favicon was selected from https://favicon.io/. 
 <li>Google fonts</li>
+Josefin Sans font was taken from https://fonts.google.com/
 <li>Chrome Dev Tools</li>
 Elements tool was used for styling testing and Console for Javascript testing/validation/troubleshooting.
 <li>JSHint</li>
+Used to test the Javascript code throughout the creation of the project.
 <li>Gitpod</li>
 The website was developed using Gitpod in Chrome
 <li>GitHub</li>
