@@ -165,7 +165,7 @@ JPG format gallery photos were converted to webp using https://convertio.co/jpg-
 </ul>
 <h1>Testing<h1>
 <h2>Accessibility</h2>
-Care was taken to ensure sufficient level of accessibility and user friendliness by using semantic HTML elements, aria-labels, appropriate color contrast, different hover and active states, sans serif font. Accessibility was tested during the project creating as well as upon completion with [Wave](https://wave.webaim.org/) - Web Accessibility Evaluation Tool. No errors were detected.
+Care was taken to ensure sufficient level of accessibility and user friendliness by using semantic HTML elements, aria-labels, appropriate color contrast, different hover and active states, sans serif font. Accessibility was tested during the project creating as well as upon completion with [Wave](https://wave.webaim.org/) - Web Accessibility Evaluation Tool. No errors were returned, however there was an alert about a missing fieldset around input/label fields in answer-box div. This was fixed by adding a hidden fieldset and legend tags for screenreaders to improve accessibility.
 
 ![Accessibility index](docs/testing-images/access-index.JPG)
 ![Accessibility quiz](docs/testing-images/access-quiz.JPG)
