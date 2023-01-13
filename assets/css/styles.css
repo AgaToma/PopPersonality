@@ -245,6 +245,8 @@ footer {
 
 }
 
+/*Results card*/
+
 #results-card {
     width: 95vw;
     height: 80vh;
@@ -281,6 +283,7 @@ footer {
 
     #title-box {
         padding-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .container {
@@ -290,9 +293,36 @@ footer {
         padding: 1.5rem;
     }
 
+    #question-card {
+        width: 90%;
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 0.7rem;
+        line-height: 2.5rem;
+    }
+
     footer {
         bottom: 10px;
     }
+
+    #results-card {
+        height: 70vh;
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 0.2rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    #character-card {
+        height: 82%;
+    }
+
+    .char-img {
+        height: 20rem;
+        padding: 0.2rem;
+    }
+
 
 }
 
