@@ -19,17 +19,16 @@ body {
     font-weight: 300;
 }
 
-#quiz-area,
-#intro-area {
-    margin: 0;
-    height: 70vh;
-    width: 80vw;
+/*Box in the header*/
+#title-box {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: rgba(245, 243, 243, 0.6);
+    letter-spacing: 0.5rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: rgba(58, 57, 58, 0.6);
-    border-radius: 5px;
 }
 
 a {
@@ -64,6 +63,21 @@ h1 {
     font-weight: bold;
 }
 
+/*Main display boxes*/
+#quiz-area,
+#intro-area {
+    margin: 0;
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(58, 57, 58, 0.6);
+    border-radius: 5px;
+}
+
+
 .grab:hover {
     cursor: grab;
 }
@@ -71,7 +85,6 @@ h1 {
 .radio-btn:hover {
     cursor: grab;
 }
-
 
 .container {
     width: 80%;
@@ -85,42 +98,12 @@ h1 {
     line-height: 3rem;
 }
 
-#title-box {
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: rgba(245, 243, 243, 0.6);
-    letter-spacing: 0.5rem;
-    display: flex;
-    align-items: center;
-}
-
 .hidden {
     display: none;
 }
 
 #rules-content {
     text-align: center;
-}
-
-.redirect-btn {
-    color: black;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
-    background-color: rgba(245, 245, 245, 0.9);
-    border-radius: 7px;
-    letter-spacing: 0.1rem;
-    border-style: outset;
-    border-color: gainsboro;
-    font-weight: bold;
-}
-
-.redirect-btn:hover {
-    border-color: black;
-    box-shadow: 1px 1px 15px 10px rgba(86, 185, 235, 0.5);
 }
 
 #open-modal {
@@ -139,6 +122,52 @@ h1 {
 }
 
 #open-modal:hover {
+    border-color: black;
+    box-shadow: 1px 1px 15px 10px rgba(86, 185, 235, 0.5);
+}
+
+/* The Close Button */
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 15px;
+    color: white;
+    letter-spacing: 0.1rem;
+
+}
+
+/*Buttons*/
+
+.redirect-btn {
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(245, 245, 245, 0.9);
+    border-radius: 7px;
+    letter-spacing: 0.1rem;
+    border-style: outset;
+    border-color: gainsboro;
+    font-weight: bold;
+}
+
+.redirect-btn:hover {
     border-color: black;
     box-shadow: 1px 1px 15px 10px rgba(86, 185, 235, 0.5);
 }
@@ -162,6 +191,8 @@ h1 {
     box-shadow: 1px 1px 15px 10px rgba(86, 185, 235, 0.5);
 }
 
+/*Name and age input slides*/
+
 #age-input,
 #name-input {
     line-height: 1.5rem;
@@ -180,6 +211,8 @@ h1 {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+/*Question card*/
 
 #question-card {
     width: 65%;
@@ -225,32 +258,6 @@ fieldset {
     transform: translateY(-0.1rem);
 }
 
-
-
-/* The Close Button */
-.close-modal {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close-modal:hover,
-.close-modal:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Footer */
-
-footer {
-    position: fixed;
-    bottom: 15px;
-    color: white;
-    letter-spacing: 0.1rem;
-
-}
 
 /*Results card*/
 
