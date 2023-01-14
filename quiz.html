@@ -35,13 +35,16 @@
             <div id="name-box" class="container">
                 <label for="name-input">Please tell us your name to continue</label><br>
                 <input type="text" id="name-input" maxlength="15"><br>
-                <div id="name-reminder" class="hidden">It's not possible to continue without entering a name</div>
+                <div id="name-reminder" class="hidden reminder">It's not possible to continue without entering a name
+                </div>
                 <button type="submit" id="intro-next" class="control-btn">Next</button>
             </div>
             <!--Age input box-->
             <div id="age-box" class="container hidden">
                 <label id="age-label" for="age-input">Please tell us your age</label><br>
                 <input type="number" id="age-input" placeholder="Enter a number"><br>
+                <div id="age-reminder" class="hidden reminder">This quiz is intended for persons from 6 years of age -
+                    please enter your age accordingly</div>
                 <button type="submit" class="control-btn" id="start-quiz">Start quiz</button>
             </div>
 

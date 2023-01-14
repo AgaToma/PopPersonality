@@ -207,10 +207,11 @@ footer {
     cursor: pointer;
 }
 
-#name-reminder {
+.reminder {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 
 /*Question card*/
 

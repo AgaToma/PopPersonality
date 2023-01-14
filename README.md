@@ -311,5 +311,11 @@ Character images were taken from fandom wikis. Background image is a free to use
 
 <h2>Content</h2>
 Content of the website is fictional and was created for educational purposes of building the website by it's author (Aga Tomaszewska). It is not based on any psychological or personality research, results are generated mathematically based on random score question.
-
-<h2>Copyright disclaimer?</h2>
+<h3>Characters</h3>
+Characters used on the results cards belong to the below shows and production companies:
+<ul>
+    <li>Disney: Ghostforce (Chaorion), Frozen (Elsa), Lion Guard (Kion), Pirates of the Caribbean (Jack Sparrow), Star Wars (Luke Skywalker & Jyn Erso)</li>
+    <li>Netflix: Stranger Things (Eleven), Wednesday (Enid), The Witcher (Geralt)</li>
+    <li>MGM: Vikings (Lagertha)</li>
+    <li>Universal Pictures (via Illumination)</li>
+</ul>

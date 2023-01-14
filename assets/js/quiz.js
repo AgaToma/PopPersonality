@@ -48,7 +48,7 @@ function showAgeBox() {
     if (userName.value === "") {
         introNextButton.disabled = true;
         document.getElementById("name-reminder").style.display = "block";
-        userName.addEventListener("input", function enableButton (){
+        userName.addEventListener("input", function enableButton() {
             introNextButton.disabled = false;
             document.getElementById("name-reminder").style.display = "none";
         });
@@ -69,11 +69,21 @@ function showAgeBox() {
 
 function validateAgeInput() {
 
-     if (userAge.value === "") {
+    if (userAge.value === "") {
         startQuizButton.disabled = true;
-        userAge.addEventListener("input", function enableButton (){
+        userAge.addEventListener("input", function enableButton() {
             startQuizButton.disabled = false;
-        });} else {startQuiz();}
+        });
+    } else if (userAge.value < 6) {
+        startQuizButton.disabled = true;
+        document.getElementById("age-reminder").style.display = "block";
+        userAge.addEventListener("input", function enableButton() {
+            startQuizButton.disabled = false;
+            document.getElementById("age-reminder").style.display = "none";
+        });
+    } else {
+        startQuiz();
+    }
 }
 
 
@@ -113,24 +123,24 @@ fetch("assets/js/resultsKids.json")
 let resultsTeens = [];
 
 
-    fetch("assets/js/resultsTeens.json")
-        .then((res) => {
-            return res.json();
-        })
-        .then((loadedResults) => {
-            resultsTeens = loadedResults;
-        });
+fetch("assets/js/resultsTeens.json")
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedResults) => {
+        resultsTeens = loadedResults;
+    });
 
-        let resultsAdults = [];
+let resultsAdults = [];
 
 
-        fetch("assets/js/resultsAdults.json")
-            .then((res) => {
-                return res.json();
-            })
-            .then((loadedResults) => {
-                resultsAdults = loadedResults;
-            });
+fetch("assets/js/resultsAdults.json")
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedResults) => {
+        resultsAdults = loadedResults;
+    });
 
 
 //maximum amount of questions a user will get
@@ -175,14 +185,14 @@ function getNextQuestion() {
         0
     );
 
-    
+
     /**
      * resets the chosen answer from previous question 
      */
     for (let i of radios) {
         nextQuestionButton.addEventListener("click", () => {
             i.checked = false;
-            });
+        });
     }
 
 
@@ -220,9 +230,9 @@ function getNextQuestion() {
             }
         });
     }
-/**
- * changes the button on last question to suggest getting results
- */
+    /**
+     * changes the button on last question to suggest getting results
+     */
     if (questionCounter === maxQuestionCount) {
         nextQuestionButton.innerText = "Submit and get results";
     }
@@ -249,7 +259,7 @@ function getResults() {
 
     if (userAge.value <= 12) {
         availableResults = [...resultsKids];
-    } else if (userAge.value > 12 && userAge.value < 18){
+    } else if (userAge.value > 12 && userAge.value < 18) {
         availableResults = [...resultsTeens];
     } else {
         availableResults = [...resultsAdults];

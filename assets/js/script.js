@@ -10,8 +10,8 @@ rulesClose.addEventListener("click", closeRulesModal);
 
 /** 
  * Opens rules modal when user clicks Rules button
-*/
-function openRulesModal () {
+ */
+function openRulesModal() {
     rulesModal.style.display = "block";
     document.getElementById("description-box").style.display = "none";
     document.getElementById("rules-btn-container").style.display = "none";
@@ -19,10 +19,9 @@ function openRulesModal () {
 
 /** 
  * Closes rules modal when user clicks x
-*/
-function closeRulesModal () {
+ */
+function closeRulesModal() {
     rulesModal.style.display = "none";
     document.getElementById("description-box").style.display = "block";
     document.getElementById("rules-btn-container").style.display = "block";
 }
-
