@@ -236,8 +236,8 @@ let loopCounter = 0;
 choices.forEach((choice) => {
     choice.addEventListener('click', (event) => {
         loopCounter++;
-        selectedChoice = event.target;
-        selectedAnswer = selectedChoice.dataset['number'];
+        let selectedChoice = event.target;
+        selectedAnswer = selectedChoice.dataset.number;
     });
 });
 
