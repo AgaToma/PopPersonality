@@ -184,6 +184,7 @@ footer {
     border-color: gainsboro;
     font-size: 1.3rem;
     margin: 1rem;
+    color: black;
 }
 
 .control-btn:hover {

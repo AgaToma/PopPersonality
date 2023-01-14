@@ -325,6 +325,9 @@ https://github.com/orgs/community/discussions/23086
 
 
 <h2>Acknowledgements</h2>
+My Code Institute mentor [Daisy McGirr](https://github.com/Daisy-McG) - for her guidance, support and useful insights. 
+My friends for helpful feedback during user testing. 
+
 <h2>Images</h2>
 
 Character images were taken from fandom wikis. Background image is a free to use photo from Unsplash.
