@@ -197,6 +197,7 @@ https://tinyjpg.com/ was used to reduce the size of the images
 <li>Convertio</li>
 JPG format gallery photos were converted to webp using https://convertio.co/jpg-webp/ 
 </ul>
+
 <h1>Testing<h1>
 <h2>Accessibility</h2>
 Care was taken to ensure sufficient level of accessibility and user friendliness by using semantic HTML elements, aria-labels, appropriate color contrast, different hover and active states, sans serif font. Accessibility was tested during the project creating as well as upon completion with [Wave](https://wave.webaim.org/) - Web Accessibility Evaluation Tool. No errors were returned, however there was an alert about a missing fieldset around input/label fields in answer-box div. This was fixed by adding a hidden fieldset and legend tags for screenreaders to improve accessibility.
@@ -208,6 +209,8 @@ Care was taken to ensure sufficient level of accessibility and user friendliness
 
 ![Lighthouse desktop](docs/testing-images/lighthouse-desktop.JPG)
 ![Lighthouse mobile](docs/testing-images/lighthouse-mobile.JPG)
+
+During responsiveness test on iPhone, it was discovered that control buttons font color was showing as white, which was causing contrast issue. As a fix, font color was specified as black in the control-btn class, which fixed the issue. 
 
 <h2>Validator testing</h2>
 
@@ -281,9 +284,38 @@ https://github.com/orgs/community/discussions/23086</li>
 
 <h2>Responsiveness</h2>
 
-Responsive fixes for mobiles (Filip) and laptops - Results card
-Fix: add wrap feature for description text on results card
-Finish button pushed too high on the results card content (small screens) - adjusted height to fix
+<p>Website was developed and tested for responsiveness using Developer Tools in Chrome. To ensure optimal website look for best user experience for screen sizes starting from 320px the below wiewport size breakpoints were applied:</p>
+<ul>
+    <li>Laptop viewport 1366px - 768px</li>
+    <li>below 1300px</li>
+    <li>below 1040px</li>
+    <li>below 930px</li>
+    <li>320px - 620px</li>
+</ul>
+
+<p>Testing was done by applying breakpoints in the Dimensions section by setting it to responsive. To ensure the website's look is as desired between the breakpoints, the responsive testing window was manually dragged to increase/decrease width.</p>
+
+<h3>Expected behaviour</h3>
+Website is responsive on all screen sizes with photos not being pixelated or stretched, no scrollbars are appearing except for the one in the design. 
+
+<h3>Actual behaviour</h3>
+During user testing the below was found:
+<ol>
+    <li>problem: on laptop screens - some items were overflowing containers - fix: added separated media query for laptop screens</li>
+    <li>problem: on mobiles description text on results card was being clipped - fix: added wrap feature for description text on results card</li>
+    <li>problem: on mobiles finish button pushed too high on the results card content - fix: adjusted container's height</li>
+</ol>
+
+<h3>Devices the site was tested on for responsiveness</h3>
+<p>Asus E406M + external Dell monitor</p>
+<p>Asus E406M</p>
+<p>Lenovo Think Pad L13</p>
+<p>Lenovo Tab M10</p>
+<p>iPhone XR</p>
+<p>Samsung Galaxy 8+</p>
+<p>Motorola g100</p>
+<p>Pixel 5</p>
+
 <h1>Deployment</h1>
 <h2>Version Control</h2>
 Site was created and developed with GitHub using Gitpod in Chrome. The following commands were used for version control.
@@ -301,6 +333,12 @@ Live website can be found [here](https://agatoma.github.io/PopPersonality)<br>
 GitHub repository can be found [here](https://github.com/AgaToma/PopPersonality)
 
 <h2>Forking & Cloning</h2>
+<h3>How to fork</h3>
+Click Fork button on the top right -> select owner -> optionally change name or add description -> create Fork.
+
+<h3>How to clone</h3>
+Click on the code button -> select clone with HTTPS, SSH or GitHub CLI -> copy the link shown -> open terminal in your code editor and change the current working directory to the location you want to use for the cloned directory -> type 'git clone' into the terminal and then paste the copied link -> press enter.
+
 <h1>Credits</h1>
 <h2>References</h2>
 Used the below resources for reference and help.

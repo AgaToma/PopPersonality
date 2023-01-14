@@ -351,6 +351,7 @@ fieldset {
 
 }
 
+/*Viewport size below 1040px*/
 @media screen and (max-width: 1040px) {
 
     body {
@@ -378,6 +379,7 @@ fieldset {
     }
 }
 
+/*Viewport size below 930px*/
 @media screen and (max-width: 930px) {
     #title-box {
         padding: 0.5rem;
@@ -432,7 +434,7 @@ fieldset {
 }
 
 
-
+/*Viewport size between 320px - 620px*/
 @media screen and (min-width: 320px) and (max-width: 620px) {
 
     body {
