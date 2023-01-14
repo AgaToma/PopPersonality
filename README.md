@@ -20,6 +20,40 @@ User needs to provide their age to be assigned to one of 3 age groups - kids, te
 
 <h1>Design</h1>
 <h2>Sketches</h2>
+Initial design of the page was drafted with pencil and paper.
+
+<details>
+  <summary markdown="span">Desktop design sketches</summary>
+
+![Intro](docs/design-sketches/intro-desktop.jpg)
+Intro page
+
+![Question](docs/design-sketches/question-desktop.jpg)
+Question card
+
+![Results](docs/design-sketches/results-desktop.jpg)
+Results card
+
+
+</details>
+<details>
+  <summary markdown="span">Mobile design sketches</summary>
+
+![Intro](docs/design-sketches/intro-mobile.jpg)
+Intro page
+
+![Input](docs/design-sketches/input-boxes.jpg)
+Input-boxes
+
+
+![Question](docs/design-sketches/question-mobile.jpg)
+Question card
+
+![Results](docs/design-sketches/results-mobile.jpg)
+Results card
+</details>
+
+
 <h2>Fonts</h2>
 <ul>
 <li><h3>Josefin Sans</h3>
