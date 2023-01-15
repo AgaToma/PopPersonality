@@ -18,10 +18,10 @@ let score = 0;
 let questionCounter = 0;
 let nextQuestionButton = document.getElementById("next-question");
 
-//question for questions to be selected from minus questions already used
+//questions array for questions to be selected from minus questions already used
 let availableQuestions = [];
 
-//store all answers
+//array to store all answers 
 let allAnswers = [];
 
 //Set answer on radio click (this overrides each click)
@@ -64,7 +64,7 @@ function showAgeBox() {
 }
 
 /** 
- * validates age input presence and if number format
+ * validates age input presence and number format
  */
 
 function validateAgeInput() {
