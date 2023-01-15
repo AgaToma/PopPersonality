@@ -286,6 +286,7 @@ https://github.com/orgs/community/discussions/23086</li>
 <p>Website was developed and tested for responsiveness using Developer Tools in Chrome. To ensure optimal website look for best user experience for screen sizes starting from 320px the below wiewport size breakpoints were applied:</p>
 <ul>
     <li>Laptop viewport 1366px - 768px</li>
+    <li>Laptop viewport 1280px - 800px</li>
     <li>below 1300px</li>
     <li>below 1040px</li>
     <li>below 930px</li>
@@ -300,7 +301,7 @@ Website is responsive on all screen sizes with photos not being pixelated or str
 <h3>Actual behaviour</h3>
 During user testing the below was found:
 <ol>
-    <li>problem: on laptop screens - some items were overflowing containers - fix: added another media query specifically for laptop screens</li>
+    <li>problem: on laptop screens - some items were overflowing containers - fix: added more media queries specifically for laptop screens</li>
     <li>problem: on mobiles description text on results card was being clipped - fix: added wrap feature for description text on results card</li>
     <li>problem: on mobiles finish button pushed too high on the results card content - fix: adjusted container's height</li>
 </ol>
