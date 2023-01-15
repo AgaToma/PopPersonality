@@ -63,10 +63,6 @@ Used for all content except logo
 
 ![300](docs/readme-images/font300.JPG)
 
-<li>400</li>
-
-![400](docs/readme-images/font400.JPG)
-
 <li>Bold</li>
 
 ![Bold](docs/readme-images/fontbold.JPG)

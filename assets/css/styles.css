@@ -57,7 +57,6 @@ a h1:hover {
 }
 
 h1 {
-    font-weight: 400;
     letter-spacing: 1rem;
     font-family: Times;
     font-weight: bold;
@@ -318,6 +317,10 @@ fieldset {
         line-height: 2.5rem;
     }
 
+    #answer-box {
+        margin-bottom: 0.5rem;
+    }
+
     footer {
         bottom: 10px;
     }
@@ -340,6 +343,40 @@ fieldset {
         padding: 0.2rem;
     }
 
+}
+
+@media screen and (max-width: 1200px) and (max-height:700px) {
+    
+    #title-box {
+        padding: 0.2rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    footer {
+        bottom: 5px;
+    }
+
+    #results-card {
+        height: 70vh;
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 0.2rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    #character-card {
+        height: 72%;
+    }
+
+    #character-img img {
+        height: 18rem;
+        padding: 0.2rem;
+    }
 }
 
 /*Viewport size below 1300px*/
